@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=fiel, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            Salutation
+            <br>
+            <br>
+
+            <select>
+                <option value=""> None</option>
+            </select>
+            <br>
+            <br>
+            <label for="">First name</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="">Last name</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="G">Gender:</label>
+
+            <input type="radio" id="M" name="Gender">
+            <label for="M">Male</label>
+            <input type="radio" name="Gender">
+            <label for="F"> Female </label>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="Email" name="email" id="email">
+            <br>
+            <br>
+            <label for="date">Date of birth:</label>
+            <input type="date">
+            <br>
+            <br>
+            <p>Adress:</p>
+            <textarea name="adress" id="adress" cols="30" rows="10"> :D </textarea>
+            <br>
+            <br>
+            <input type="submit">
+        </fieldset>
+        <br>
+        <br>
+        <h1>HTML Form</h1>
+        <label for=>First Name:</label>
+        <input type="text" placeholder="Enter first name">
+        <br>
+        <br>
+        <label for="">Last Name:</label>
+        <input type="text" placeholder="Enter first name">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email adress">
+        <br>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="phone" placeholder="Enter phone number" pattern="[0-9](3)-[0-9](3)-[0-9](2)-[0-9](2)-[0-9](2)">
+        <br>
+        <br>
+        <label for="">Counrty:</label>
+        <select name="country">
+            <option value="">Choose a country</option>
+        </select>
+        <br>
+        <br>
+        <label for="">City</label>
+        <select name="city">
+            <option value="">Choose a city</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Language(s):</label>
+        <br>
+        <br>
+        <label for="">En</label>
+        <input type="checkbox" name="language" id="En">
+        <label for="">De</label>
+        <input type="checkbox" name="language" id="De">
+        <label for="">Fr</label>
+        <input type="checkbox" name="language" id="Fr">
+        <label for="">Ru</label>
+        <input type="checkbox" name="language" id="Ru">
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        <br>
+        <br>
+        <h1>Login</h1>
+        <label for="">Name:</label>
+        <input type="name">
+        <br>
+        <br>
+        <label for="">Email:</label>
+        <input type="email">
+        <br>
+        <br>
+        <label for="">Password:</label>
+        <input type="password">
+        <br>
+        <br>
+        <label for="">Phone:</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="G">Gender:</label>
+        <input type="radio" name="gender" id="Male">
+        <label for="M">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="F">Female</label>
+        <br>
+        <br>
+        <label for="">Date of birth:</label>
+        <select name="date" id="Date">
+            <option value="">Date</option>
+            <optgroup>
+                <option value="">1</option>
+            </optgroup>
+            <optgroup>
+                <option value="">2</option>
+            </optgroup>
+        </select>
+        <select name="date" id="Date">
+            <option value="">Month</option>
+            <optgroup>
+                <option value="">January</option>
+            </optgroup>
+            <optgroup>
+                <option value="">February</option>
+            </optgroup>
+        </select>
+        <select name="date" id="Date">
+            <option value="">Year</option>
+            <optgroup>
+                <option value="">2022</option>
+            </optgroup>
+            <optgroup>
+                <option value="">2023</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Send">
+        <br>
+        <br>
+        <h1>My feedback form</h1>
+        <ul>
+            <li>
+                <label for="">Name:</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">Email:</label>
+                <input type="email">
+            </li>
+            <li>
+                <label for="">Password:</label>
+                <input type="password">
+            </li>
+            <li>Please check all the emotions that apply to you:</li>
+            <ul type="disc">
+                <li>
+                    <label for="">Angry:</label>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <label for="">Sad:</label>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <label for="">Happy:</label>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <label for="">Ambivalent:</label>
+                    <input type="checkbox">
+                </li>
+            </ul>
+            <li>How satisfied were you with our services
+                <ul type="disc">
+                    <li>
+                        <label for="">Very satisfied:</label>
+                        <input type="radio">
+                    </li>
+                    <li>
+                        <label for="">satisfied:</label>
+                        <input type="radio">
+                    </li>
+                    <li>
+                        <label for="">Didn't care:</label>
+                        <input type="radio">
+                    </li>
+                    <li>
+                        <label for="">Dissatisfied:</label>
+                        <input type="radio">
+                    </li>
+                    <li>
+                        <label for="">Very Dissatisfied:</label>
+                        <input type="radio">
+                    </li>
+                    <li>Further comments:
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </li>
+                    <li>Bio photo:
+                        <label for="">
+                            <input type="file">
+                        </label>
+                    </li>
+                    <li>Location visited:
+                        <select>
+                            <option value="">Select Location</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="submit">
+                    </li>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <label="">Username*</flabel>
+                        <br>
+                            <input type="text">
+                            <br>
+                            <br>
+                            <label name="">Password*</label>
+                            <br>
+                                <input type="password">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Gender*</legend>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Gender">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Gender">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Programming Skill</legend>
+                        <input type="checkbox">
+                        <label for="checkbox">Java</label>
+                        <input type="checkbox">
+                        <label for="checkbox">C++</label>
+                        <input type="checkbox">
+                        <label for="checkbox">C#</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Country</legend>
+                        Choose a country
+                        <select>
+                            <option value="">Azerbaijan</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <textarea name="" id="" cols="80" rows="7">Enter your comment here</textarea>
+                    <br>
+                    <input type="submit">
+                    <input type="reset">
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="">Name:</label>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email">
+                        <br>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password">
+                        <br>
+                        <br>
+                        <label for="">Phone:</label>
+                        <input type="">
+                        <br>
+                        <br>
+                        <label for="Gender">Gender:</label>
+                        <input type="radio" name="Gender">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Gender">
+                        <label for="Female">Female</label>
+                        <br>
+                        <br>
+                        <label for="date">Date of birth</label>
+                        <input type="date">
+                        <br>
+                        <br>
+                        Country:
+                        <select>
+                            <option value="">Choose the counrty</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Address</legend>
+                        <label for="">Street:</label>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <label for="">City:</label>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <label for="">State:</label>
+                        <input type="text">
+                        <br>
+                        <br>
+                        <label for="">Zip Code:</label>
+                        <input type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Other Information</legend>
+                        Comments:
+                        <textarea name="" id="" cols="20" rows="3"></textarea>
+                        <br>
+                        <br>
+                        <label for="">I agree to the terms of services</label>
+                        <input type="checkbox">
+                    </fieldset>
+                    <br>
+                    <input type="submit">
+                    <br>
+                    <br>
+                    <select name="" id="">
+                        <option value="">Choose the car</option>
+                        <option value="">Nissan</option>
+                        <option value="">Ford</option>
+                        <option value="" disabled>Lexus</option>
+                    </select>
+                    <br>
+                    <br>
+                    <select name="" id="">
+                        <option value="">Choose the product</option>
+                        <optgroup label="Fruit">
+                            <option value="">apple</option>
+                            <option value="">orange</option>
+                            <option value="">pear</option>
+                            <option value="">grape</option>
+                        </optgroup>
+                        <optgroup label="Vegetables">
+                            <option value="">potato</option>
+                        </optgroup>
+
+                    </select>
+    </form>
+
+    <div style="margin-top: 20px;">
+
+        <table border="1" width="40%" style="text-align: center;">
+            <tr>
+                <th rowspan="2">Heading</th>
+                <th>Student</th>
+                <th colspan="3">Details</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll namber</th>
+            </tr>
+            <tr>
+                <td rowspan="4">Student list</td>
+                <td>1</td>
+                <td>Victor</td>
+                <td>Computer science</td>
+                <td>1234</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kate</td>
+                <td>Law</td>
+                <td>2345</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Harry</td>
+                <td>Electronic</td>
+                <td>3456</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Clara</td>
+                <td>Architecture</td>
+                <td>2345</td>
+            </tr>
+        </table>
+        <br>
+        <table border="1" width="40%">
+                <tr>
+                    <th rowspan="3">A</th>
+                    <th colspan="3" rowspan="2">B</th>
+                    <th rowspan="3">C</th>
+                    <th colspan="6">D</th>
+                </tr>
+                <tr>
+                    <th colspan="2">O</th>
+                    <th colspan="2">P</th>
+                    <th rowspan="2">N</th>
+                </tr>
+                <tr>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                    <th>K</th>
+                    <th>L</th>
+                    <th>M</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <table border="1" width="50%">
+                <tr>
+                    <th>Day/Period</th>
+                    <th>1 9:30-10:20</th>
+                    <th>2 10:20-11:20</th>
+                    <th>3 11:00-12:00</th>
+                    <th>12:00-12:40</th>
+                    <th>4 12:20-1:30</th>
+                    <th>5 1:30-2:20</th>
+                    <th>6 2:20-3:10</th>
+                    <th>7 3:10-4:00</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Eng</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td rowspan="6">LUNCH</td>
+                    <td colspan="3">LAB</td>
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="3">LAB</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Mat</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LIBRARY</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Phy</td>
+                    <Td>Eng</Td>
+                    <td>Che</td>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td>eng</td>
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td colspan="3">SEMINAR</td>
+                    <td>SPORTS</td>
+                </tr>
+            </table>
+            <br>
+            <table border="1" width="60%">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Jobs</th>
+                    <th>Working experience</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Software engineer</td>
+                    <td>Data analyst</td>
+                    <td rowspan="2">5 Years</td>
+                </tr>
+                <tr>
+                    <td>Ale</td>
+                    <td colspan="2">Senior Web developer</td>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Junior tech Witer</td>
+                    <td>Blogger</td>
+                    <td>9 Monts</td>
+                </tr>
+            </table>
+            <br>
+            <h1>Computer system</h1>
+            <br>
+            
+            <ol>
+                <li> <b>Hardware</b>
+                    <ol type="i">
+                        <li>CPU</li>
+                        <li>FV</li>
+                        <li>DFV</li>
+                    </ol>
+                </li>
+
+                <li> <b>Software</b>
+                    <ol type="A">
+                        <li> <i>System Software</i>
+                            <ol type="a">
+                                <li>Operating System</li>
+                                <li>Device Drivers</li>
+                            </ol>
+                        </li>
+                        <li> <i>Application</i>
+                            <ol type="a">
+                                <li>Word processor</li>
+                                <li>SpreadSheets</li>
+                                <li>Graphic Spftware etc.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
