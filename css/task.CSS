@@ -1,28 +1,30 @@
 .task1 p {
     background-color: lightblue;
-    margin-right: 60px;
+    margin-right: 50px;
     margin-left: 40px;
 }
 
 .task1 p:nth-child(1) {
-    text-align: ;
-    left: auto;
+    text-align-last: left;
 }
 
 .task1 p:nth-child(2) {
     text-align-last: center;
 }
 
-.task1:nth-child(3) {
+.task1 p:nth-child(3) {
+    text-align: justify;
     text-align-last: right;
 }
 
-.task1:nth-child(4) {
-    justify-content: left;
+.task1 p:nth-child(4) {
+    text-align: justify;
+    text-align-last: left;
 }
 
-.task1:nth-child(5) {
-     
+.task1 p:nth-child(5) {
+    text-align: justify;
+    text-align-last: center;
 }
 
 .task2 {
@@ -35,7 +37,7 @@
     margin: 20px auto;
     text-align: center;
     background-color: aliceblue;
-    
+
 }
 
 .task2 p:nth-child(1) {
@@ -51,30 +53,36 @@
 .task2 p:nth-child(3) {
     border-style: calc(dotted);
 }
+
 .task2 p:nth-child(4) {
     border-style: dashed;
     border-color: darkgray;
     text-decoration: overline;
 }
+
 .task2 p:nth-child(5) {
     border-style: double;
     border-color: darkgray;
     text-decoration: underline;
 }
+
 .task2 p:nth-child(6) {
-    border-style: solid ;
+    border-style: solid;
     font-size: large;
-    border: 2px solid; 
+    border: 2px solid;
     border-color: blueviolet orange red blue;
 }
+
 .task2 p:nth-child(7) {
-    border-style: none dotted double dashed ;
+    border-style: none dotted double dashed;
     border-color: aquamarine blueviolet orange red;
 }
+
 .task3 {
     margin-top: 5%;
 }
-.task3 p{
+
+.task3 p {
     font-style: italic;
     font-weight: bold;
     border-bottom: 3px solid black;
@@ -82,10 +90,13 @@
     padding: 10px;
     margin: 0;
     margin-left: 10%;
-    margin-right: 80%;  
+    margin-right: 80%;
 }
-.task3 {margin-bottom: 10%;
+
+.task3 {
+    margin-bottom: 10%;
 }
+
 .task4 p {
     padding: 10px;
     text-align: center;
@@ -93,10 +104,11 @@
 
 .task4 p:nth-child(1) {
     border-style: solid;
-    border-color:goldenrod;
+    border-color: goldenrod;
     margin-right: 85%;
     margin-left: 1%;
 }
+
 .task4 p:nth-child(2) {
     border-style: dotted;
     border-color: goldenrod;
@@ -104,6 +116,7 @@
     margin-left: 10%;
     margin-top: 5%;
 }
+
 .task4 p:nth-child(3) {
     border-style: dashed;
     border-color: goldenrod;
@@ -111,6 +124,7 @@
     margin-left: 20%;
     margin-top: 5%;
 }
+
 .task4 p:nth-child(4) {
     border-style: double;
     border-color: goldenrod;
@@ -118,100 +132,144 @@
     margin-left: 30%;
     margin-top: 5%;
 }
+
 .task4 p {
     margin-bottom: 5%;
 }
-.div1 p { 
+
+.div1 p {
     text-align: left;
 }
-.div2 p {
-    text-align: ;
-}
 
-   tr:nth-child(even) {
-    background-color:grey;
+tr:nth-child(even) {
+    background-color: grey;
     border-style: solid black;
 }
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        text-align: center;
-}
 
-{
-	font-family: "Poppins", sans-serif;
-}
- .task6 {margin-top: 5%;}
-.task6 div{
-	width: 100px;
-	height: 100px;
-	background: orange;
-	margin:5px ;
-	display: inline-block;
-	margin-left: 50px;
-	border-color: red;
-
-
-}
-.bir{
-	border-radius: 25px;
-}
-.iki{
-	border-radius: 35px 0px;
-}
-.uc{
-	border-radius: 70px 70px 0px 0px;
-}
-.dord{
-	border-radius: 100% 0px 0px 0px;
-}
-.bes{
-	border-radius: 0px 50%;
-}
-.alti{
-	border-radius: 0px 100%;
-}
-.yeddi{
-border-radius: 100% 100% 0px 100%;
-}
-
-.sekkiz{
-	border-radius:100%;
-}
-.sekkiz {margin-bottom: 50%;}
-
-.header1 ,.header2,.header3 {margin-top: 1%;
-text-align: center; text-align: left; margin-left: 10%;
-margin-right: 80%;}
-
-.main {margin: auto;
-box-shadow: 2px 2px 5px lightgray;
-width: 50%;
-height: 60%;}
-.header1 {
-    
-    background-color:cornflowerblue;
-    font-size: larger;
-    color: aliceblue;
-   
-}
-.header2 {
-    width: 50%;
-    height: auto;
-    font-size: small;
-    
-}
-.header3 {
-    width: 50%;
-    height: auto;
-    background-color: cornflowerblue;
-    font-size: small;
-    color: aliceblue;
-}
-.header3 {margin-bottom: 5%;}
-
-.img {
-    filter: drop-shadow(100px);
-    background-position: center;
-    
+ table,th,td
+{ 
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
 } 
+
+.task6 {
+    margin-top: 5%;
+}
+
+.task6 div {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 5px;
+    display: inline-block;
+    margin-left: 50px;
+    border: solid 2px red;
+
+
+}
+
+.bir {
+    border-radius: 25px;
+}
+
+.iki {
+    border-radius: 35px 0px;
+}
+
+.uc {
+    border-radius: 70px 70px 0px 0px;
+}
+
+.dord {
+    border-radius: 100% 0px 0px 0px;
+}
+
+.bes {
+    border-radius: 0px 50%;
+}
+
+.alti {
+    border-radius: 0px 100%;
+}
+
+.yeddi {
+    border-radius: 100% 100% 0px 100%;
+}
+
+.sekkiz {
+    border-radius: 100%;
+}
+
+.task6 {
+    margin-bottom: 6%;
+}
+
+
+
+.task7 {
+    box-shadow: 2px 2px 5px lightgray;
+    width: 60%;
+    margin: auto;
+}
+
+
+.header1 {
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    background-color: rgb(64, 109, 192);
+    color: aliceblue;
+    font-size: xx-large;
+
+}
+
+.header2 {
+    padding-top: 20px;
+    display: inline-block;
+    padding-left: 10px;
+    height: 150px;
+    width: 100%;
+    font-size: small;
+    text-align: left;
+
+}
+
+.header3 {
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(59, 93, 155);
+    color: aliceblue;
+}
+
+.header3 {
+    margin-bottom: 5%;
+}
+
+.task8 {
+    margin: auto;
+    width: 25%;
+    background-color: white;
+    height: 620px;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 4%;
+
+}
+
+.task8 img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.task8 h1,
+p {
+    padding-left: 20px;
+    font-family: "Open Sans", sans-serif;
+}
