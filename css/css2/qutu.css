@@ -1,0 +1,77 @@
+.umumi{
+    display: flex;
+    justify-content: space-around;
+}
+.esas {
+    width: 15%;
+    height: 600px;
+    border: 2px solid black;
+    line-height: 100px;
+}
+ .grey ,.pink,.green,.yellow {
+    width: 140px;
+    height: 100px;
+    margin: 25px auto;
+    text-align: center;
+    color: white;
+}
+.bir :first-child{
+    background-color: grey;
+    position: relative;
+    top: 80px;
+    left: 50px;
+}
+.bir :nth-child(2){
+    background-color: pink;
+}
+.bir :nth-child(3){
+    background-color: green;
+}
+.bir :nth-child(4){
+    background-color:  orange;
+} 
+ .grey2 ,.pink2,.green2,.yellow2 {
+    width: 140px;
+    height: 100px;
+    margin: 25px auto;
+    text-align: center;
+    color: white;
+}
+.iki :first-child{
+    background-color: grey;
+    position: relative;
+    top: 80px;
+    left: 50px;
+    z-index: -1;
+}
+.iki :nth-child(2){
+    background-color: pink;
+}
+.iki :nth-child(3){
+    background-color: green;
+}
+.iki :nth-child(4){
+    background-color: orange;
+} 
+ .grey3 ,.pink3,.green3,.yellow3 {
+    width: 140px;
+    height: 100px;
+    margin: 25px auto;
+    text-align: center;
+    color: white;
+}
+.uc :first-child{
+    background-color: grey;
+    position: relative;
+    top: 180px;
+    right: 70px;
+}
+.uc :nth-child(2){
+    background-color: pink;
+}
+.uc :nth-child(3){
+    background-color: green;
+}
+.uc :nth-child(4){
+    background-color: orange;
+} 

@@ -1,0 +1,130 @@
+/* .main{
+    width: 100%;
+    height: 720px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 20px;
+    gap: 20px 50px;
+    padding: 20px;} */
+    /* grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,auto);
+} */
+/* .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    grid-row:1;
+    grid-column:1;
+}
+.item2{
+    grid-row:1 /span 2;
+    grid-column:2;
+}
+.item3{
+    grid-column: 3 /span 2 ;
+    grid-row: 1;
+}
+.item4{
+    grid-row:2;
+    grid-column:1;
+}
+.item5{
+    grid-row:2;
+    grid-column:3;
+}
+.item6{
+    grid-row: 2 /span 2;
+    grid-column:4;
+}
+
+.item7{
+    grid-row:3;
+    grid-column:1;
+}
+
+.item8{
+    grid-row:3;
+    grid-column: 2 /span 2;
+} */
+.main{
+    width: 100%;
+    height: 720px;
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    grid-template-areas:"a b b "
+                        "a c d"
+                        "e e d ";
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    grid-area: a;
+    background-color: pink;
+}
+.item2{
+    grid-area: b;
+    background-color: rgb(135, 209, 135);
+}
+.item3{
+    grid-area: c;
+    background-color: darkblue;
+}
+.item4{
+    grid-area: d;
+    background-color: orange;
+}
+.item5{
+    grid-area: e;
+    background-color: rgb(11, 29, 11);
+}
+
+.main{
+    width: 100%;
+    height: 720px;
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    grid-template-areas:"a a a b "
+                        "c c d b"
+                        "e f f g ";
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    grid-area: a;
+    background-color: pink;
+}
+.item2{
+    grid-area: b;
+    background-color: rgb(135, 209, 135);
+}
+.item3{
+    grid-area: c;
+    background-color: rgb(134, 206, 27);
+}
+.item4{
+    grid-area: d;
+    background-color: darkblue;
+}
+.item5{
+    grid-area: e;
+    background-color: orange;
+}
+.item6{
+    grid-area: f;
+    background-color: peachpuff;
+}
+.item7{
+    grid-area: g;
+    background-color: rgb(20, 68, 20);
+}
+

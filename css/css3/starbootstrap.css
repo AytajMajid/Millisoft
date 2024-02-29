@@ -1,0 +1,428 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* hisse1 */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header ul {
+    display: flex;
+    width: 24%;
+    justify-content: space-around;
+}
+
+.header li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header h1 {
+    font-size: 45px;
+    align-items: center;
+
+}
+
+.header ul {
+    font-size: 27px;
+}
+
+/* hisse2 */
+.back {
+    width: 100%;
+    height: 1100px;
+    background-color: #1abc9c;
+    text-align: center;
+}
+
+.img {
+    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+}
+
+.row {
+    width: 200px;
+    height: 8px;
+    background-color: white;
+    margin: 1%;
+    border-radius: 2%;
+}
+
+.star {
+    font-size: 55px;
+    color: white;
+}
+
+.line {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+
+}
+
+.back h1 {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+    font-size: 120px;
+}
+
+.back h4 {
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+/* hisse3 */
+.portfo {
+    text-align: center;
+    padding-top: 60px;
+    color: rgb(44, 62, 80);
+    font-size: 45px;
+    padding: 80px;
+}
+
+.row1 {
+    width: 200px;
+    height: 8px;
+    background-color: rgb(44, 62, 80);
+    margin: 1%;
+    border-radius: 2%;
+}
+
+.star1 {
+    font-size: 55px;
+    color: rgb(44, 62, 80);
+}
+
+.line2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px;
+
+}
+
+.sekil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.box {
+    width: 28%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 1%;
+}
+
+.owerlay {
+    background-color: #1abc9c;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.9s;
+    border-radius: 20px;
+}
+
+.box:hover .owerlay {
+    opacity: 0.9;
+}
+
+.plus {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    justify-content: center;
+    top: 38%;
+    left: 45%;
+    text-align: center;
+}
+
+/* hisse4 */
+.back2 {
+    margin-top: 50px;
+    width: 100%;
+    height: 900px;
+    background-color: #1abc9c;
+    text-align: center;
+}
+
+.back2 h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+    padding-top: 150px;
+    
+}
+
+.row3 {
+    width: 200px;
+    height: 8px;
+    background-color: white;
+    margin: 1%;
+    border-radius: 2%;
+}
+
+.star3 {
+    font-size: 55px;
+    color: white;
+}
+
+.line3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+
+}
+
+.text {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    margin: 15px auto;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+.text {
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    padding-right: 10 0px;
+    text-align: start;
+    position: relative;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.button {
+    margin-top: 200px;
+    border: solid 3px;
+    color: white;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    margin: 200px auto;
+    border-radius: 10px;
+    transition: 1sn;
+}
+
+.button p {
+    font-size: 35px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 20px 10px;
+    text-align: center;
+    padding-right: 20px;
+
+}
+
+.button i {
+    font-size: 35px;
+    margin: 30px auto;
+    padding-left: 20px;
+    text-align: center;
+}
+/* hisse5 */
+.contact{
+    width: 100%;
+    height: 800px;
+}
+.head h1{
+    margin-top: 100px;
+        text-align: center;
+        color: rgb(44, 62, 80);
+        font-size: 70px;
+}
+.row4 {
+    width: 140px;
+    height: 5px;
+    background-color: rgb(44, 62, 80);
+    margin: 1%;
+    border-radius: 2%;
+}
+
+.star4 {
+    font-size: 50px;
+    color: rgb(44, 62, 80);
+}
+
+.line4 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px;
+
+}
+.button:hover {
+    background-color: bisque;
+    color: black;
+    border: none;
+}
+.esas5{
+    margin-bottom: 100px ;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.button2{
+    background-color: #1abc9c;
+    width: 140px;   
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+.button2 p{
+    color: white;
+    font-size:35px;
+    padding: 22px;
+    
+    
+}
+/* hisse6 */
+.back3{
+    margin-top: 150px;
+    background-color: #2c3e50;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.location h1{
+    font-size: 35px;
+    margin-left: 200px;
+ 
+}
+.location p{
+    font-size: 30px;
+    margin-left: 200px;
+}
+.web i{
+    height: 213px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.web i{
+        height: 120px;
+        width: 120px;
+        margin: 20px;
+        line-height: 120px;
+        font-size: 50px;
+        border-radius: 50%
+}
+.web :nth-child(2){
+    font-size: 10px;
+    text-align: center;
+    border: solid white 3px;
+        height: 80px;
+        width: 80px;
+        margin: 20px;
+        line-height: 80px;
+        font-size: 39px;
+        border-radius: 50%
+}
+.web :nth-child(3){
+    font-size: 50px;
+    text-align: center;
+    border: solid white 3px;
+    height: 80px;
+        width: 80px;
+        margin: 20px;
+        line-height: 80px;
+        font-size: 39px;
+        border-radius: 50%
+}
+.web :nth-child(4){
+    font-size: 50px;
+    text-align: center;
+    border: solid white 3px;
+    height: 80px;
+        width: 80px;
+        margin: 20px;
+        line-height: 80px;
+        font-size: 39px;
+        border-radius: 50%
+}
+.web :nth-child(5){
+    font-size: 50px;
+    text-align: center;
+    border: solid white 3px;
+    height: 80px;
+        width: 80px;
+        margin: 20px;
+        line-height: 80px;
+        font-size: 39px;
+        border-radius: 50%
+}
+.free h1{
+    font-size: 35px;
+    margin-right: 100px;
+ 
+}
+.free p{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 100px;
+ 
+}

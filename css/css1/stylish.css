@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1080px;
+    padding-bottom: 200px;
+}
+
+.fon {
+    text-align: center;
+    padding: 10px;
+    padding-top: 400px;
+}
+
+.text1 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 160px;
+    color: #1a1e20;
+}
+
+.text2 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: #1a1e20;
+}
+
+.button {
+    margin-top: 80px;
+}
+
+.button {
+    width: 200px;
+    background-color: #1D809F;
+    margin: 20px auto;
+    height: 60px;
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 60px;
+    border-radius: 10px;
+    padding: 1.50rem 2.7rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 80px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 29px;
+}
+
+.button:hover {
+    background-color: #39515e;
+}
+
+.menyu {
+    font-size: 30px;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 80px;
+    height: 80px;
+    color: #f7e6e6;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 80px;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.menyu:hover {
+    background-color: black;
+}
+/* stylish2 */
+.orta {
+    margin-top: 180px
+}
+
+.orta1 {
+    font-family: "Source Sans 3", sans-serif;
+    text-align: center;
+    font-size: 70px;
+    color: #1a1e20;
+    margin-bottom: 10px;
+}
+
+.link {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 47px;
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.link a {
+    color: rgb(107, 107, 226);
+    font-size: 47px;
+    text-decoration: underline;
+
+}
+
+.link a:hover {
+    transition: 1s;
+    color: #1D809F;
+}
+
+.button2 {
+    font-size: 34px;
+    width: 250px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #06090a;
+    margin: 20px auto;
+    height: 90px;
+    color: aliceblue;
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 10px;
+    padding: 1.50rem 2.7rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 80px;
+    text-transform: capitalize;
+}
+
+.button2:hover {
+    transition: 1sn;
+    background-color: #1a1e20;
+}
+/* stylish3 */
+.back {
+    width: 100%;
+    height: 1200px;
+    background-color: #1D809F;
+}
+.offer {
+    margin-top: 100px;
+}
+
+.text {
+    font-family: "Source Sans 3", sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 200px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.bir {
+    color: rgb(224, 164, 12);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.iki {
+    font-size: 100px;
+    color: white;
+}
+.icons {
+    text-align: center;
+    background-color: #fff;
+    color: #1D809F;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.blue h1 {
+    margin-top: 20px;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+}
+.blue p {
+    color: rgb(214, 208, 208);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 25px;
+    font-weight: light;
+}
+.icons i {
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 210px;
+}
+.blue div {
+    margin: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 340px;
+
+}
+/* stylish4 */
+.main2 {
+    background: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1200px;
+    cursor: pointer;
+    text-align: center ;
+    
+}
+.fon2 {
+    text-align: center;
+    padding-top: 300px;
+}
+.text3 {
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 80px;
+    color: #212529;
+    padding: 10px;
+}
+.text4 {
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 80px;
+    color: #212529;
+    padding: 10px;
+}
+.button3 {
+    margin-top: 80px;
+}
+.button3 {
+    width: 250px;
+    background-color: #1d809f;
+    margin: 20px auto;
+    height: 70px;
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 70px;
+    border-radius: 10px;
+    padding: 1.50rem 2.7rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 80px;
+    text-transform: capitalize;
+}
+.button2:hover {
+    background-color: #39515e;
+}
+/* stylish5 */
+.text5  {
+    padding-top: 250px;
+}
+.text5 {
+    font-size: 35px;
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    color: #ecb807;
+}
+.text6 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    color: #212529;
+}
+/* sekiller */
+.saxla{
+    text-align: center; 
+}
+.mavi {
+    width: 35%;
+    height: 700px;
+    position: relative;
+    display: inline-block;
+    clip-path: inset(0%);
+    transition: 0.8sn;
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+}
+.sekil{
+    width: 100%;
+    height: 100%;
+}
+.sekil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fon1 {
+    background-color: rgb(29, 128, 159, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.8s;
+    text-align: justify;
+    margin-top: 500px;
+}
+.mavi:hover .fon1 {
+    background-color: rgba(27, 122, 151, 0.7);
+}
+.mavi:hover {
+    clip-path: inset(5%);
+}
+.mavi2 {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 700px;
+    clip-path: inset(0%);
+    transition: 0.8sn;
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+}
+.sekil2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mavi2:hover {
+    clip-path: inset(5%);
+}
+.mavi3 {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 700px;
+    clip-path: inset(0%);
+    transition: 0.8sn;
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+}
+.sekil3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mavi3:hover {
+    clip-path: inset(5%);
+}
+.mavi4 {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 700px;
+    clip-path: inset(0%);
+    transition: 0.8sn;
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+}
+.sekil4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mavi4:hover {
+    clip-path: inset(5%);
+}
+/* stlish6 */
+.back2{
+    padding-top: 200px;
+    width: 100%;
+    height: 500px;
+    background-color: #1D809F;
+}
+.on p{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Source Sans 3", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.onlar div {
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.onlar {
+    text-align: center; 
+}
+/* click */
+.ona a{
+    color: black;}
+
+.ona{
+    background-color: white;
+    line-height: 100px;
+    font-family: "Source Sans 3", sans-serif;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-right: 80px; 
+}
+.onu a{
+    color: white;
+}
+.onu{
+    background-color: #1a1e20;
+    line-height: 100px;
+    height: 100px;
+    width: 200px;
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+/* stylish7 */
+.map{
+    width: 100%;
+    height: 950px;
+}
+.map iframe{
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+/* stylish8 */
+.footer text{
+    height: 213px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.son div{
+    display: inline-block;
+    text-align: center;
+}
+.link2{
+        height: 120px;
+        width: 120px;
+        margin: 20px;
+        line-height: 120px;
+        font-size: 50px;
+        background-color: #1D809F;
+        border-radius: 50%
+}
+.face{
+    font-size: 50px;
+    text-align: center;
+}
+.link3{
+        height: 120px;
+        width: 120px;
+        margin: 20px;
+        line-height: 120px;
+        font-size: 50px;
+        background-color: #1D809F;
+        border-radius: 50%
+}
+.twitter{
+    font-size: 50px;
+    text-align: center;
+}
+.link4{
+        height: 120px;
+        width: 120px;
+        margin: 20px;
+        line-height: 120px;
+        font-size: 50px;
+        background-color: hsl(194, 69%, 37%);
+        border-radius: 50%
+}
+.git{
+    font-size: 50px;
+    text-align: center;
+}
+.sontext{
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Source Sans 3", sans-serif;
+    color: #6c757d;
+    font-size: 20px;
+}
+
+
