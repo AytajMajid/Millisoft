@@ -1,0 +1,614 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* hisse1 */
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+}
+
+.head {
+    background-color: #212529;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 7;
+    height: 70px;
+    padding: 0 90px;
+}
+
+.head .image-icon {
+    width: 50%;
+}
+
+.head img {
+    width: 140px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.head ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Questrial", sans-serif;
+}
+
+.head li {
+    margin: 30px;
+}
+
+.navbar {
+    width: 30%;
+    height: 100%;
+}
+
+/* hisse2 */
+.back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yazi i {
+    position: relative;
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 91px;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.yazi h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.button {
+    border: solid #ffc800;
+    background-color: #ffc800;
+    color: white;
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.button p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.125rem;
+    font-weight: 700
+}
+
+/* hisse3 */
+.services {
+    height: 85vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #212528;
+}
+.blok h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 60px;
+    color: #424141;
+}
+.services p {
+      color: #6c757d;
+}
+
+.services {
+    width: 100%;
+    height: 500px;
+}
+
+.services {
+    margin-top: 100px;
+}
+
+.yellow {
+    text-align: center;
+    background-color: #ffc800;
+    color: white;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.yellow {
+    width: 120px;
+    height: 120px;
+    background-color: #ffc800;
+    border-radius: 100%;
+    line-height: 100px;
+    color: white;
+}
+
+.icons {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.blok {
+    height: 300px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.yellow i {
+    color: white;
+    font-size: 60px;
+    margin-top: 25px;
+}
+
+/* hisse4 */
+.text_a {
+    width: 100%;
+    height: 96px;
+    background-color: white;
+}
+
+.back2 h1 {
+    font-size: 45px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #212528;
+    padding-top: 50px;
+}
+
+.back2 p {
+    color: #7f8585;
+    font-style: italic;
+}
+
+.heads {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.back2 {
+    width: 100%;
+    height: 1000px;
+
+}
+
+.backk {
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+.white {
+    background-color: white;
+    width: 360px;
+    height: 350px;
+}
+
+.imgg {
+    background-color: rgb(248 249 250);
+    width: 100%;
+    height: 100%;
+}
+
+.hoverdivs {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.hoverdivs .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hoverdivs img {
+    width: 100%;
+    height: 100%;
+}
+
+.backk h1 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1%;
+    color: #2d3236;
+}
+
+.backk p {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.display {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.owerlay {
+    background: rgba(255, 200, 0, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.white:hover .owerlay {
+    opacity: 0.9;
+}
+
+.plus {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    justify-content: center;
+    top: 25%;
+    left: 40%;
+    text-align: center;
+}
+
+/* hisse5 */
+.about {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.info h1 {
+    font-size: 45px;
+}
+
+.info p {
+    color: #7f8585;
+    font-style: italic;
+    line-height: 70px;
+    margin-bottom:30px ;
+}
+
+.circle h1 {
+    font-weight: 700;
+    line-height: 45px;
+    color: #212529;
+   
+}
+
+.circle p {
+    color: #7f8585;
+    font-style: italic;
+}
+
+.inform_left {
+    width: 100%;
+    height: 300px;
+    text-align: right;
+    display: flex;
+    line-height: 30px;
+    justify-content: flex-start;
+    padding-left:5% ;
+}
+
+.inform_right {
+    width: 100%;
+    height: 300px;
+    text-align: left;
+    display: flex;
+    line-height: 30px;
+    justify-content: flex-end;
+    padding-right:5% ;
+}
+
+.inform_content {
+    width: 35%;
+}
+
+.img-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.img-circle img {
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    border: solid #d0d4d4 7px;
+}
+
+.border {
+    height: 1100px;
+    width: 2px;
+    z-index: -1;
+    background-color: #d5e0e0;
+    position: absolute;
+}
+.yellow_circle{
+    background-color: #ffc800; 
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: solid #e4ebeb 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.circle_out{
+    position: relative;
+}
+circle {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.circle_2 {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* hisse6 */
+.team{
+    height: 130vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248 249 250);
+    margin-top: 20%;
+}
+.personal_info h1{
+    padding-top: 80px;
+    font-size: 45px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #212528;
+}
+.personal_info p{
+    color: #7f8585;
+    font-style: italic;
+}
+.img_team h1{
+    color: #212528
+}
+.img_team p{
+    color: #616464;
+}
+.img_team img{
+    margin-top: 60px;
+height: 14rem;
+width: 14rem;
+border: solid #d0d4d4 7px;  
+border-radius: 50%;
+}
+.social_media :nth-of-type(1){
+    background-color: #203030;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 10px ;
+    padding: 0 10px;
+}
+.social_media{
+    margin-left: 70px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 90px;
+    line-height: 38px;
+}
+.text p{
+    margin-top: 40px;
+    color: #6c757d;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+/* hisse7 */
+.media{
+    width: 100%;
+    height: 100px;
+}
+.logo{
+margin-top: 50px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.logo img{
+    height: 2.75rem;
+}
+/* hisse8 */
+   .map{
+    background: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #232525;
+    width: 100%;
+    height: 800px;
+    }
+.contact h1 {
+    padding-top: 100px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #6c757d;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.select {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+
+}
+.select {
+     width: 80%;
+    height: 300px;
+    display: grid;
+    grid-gap: 40px 20px ;
+    grid-template-areas: "a b "
+                         "c b  "
+                         "d b ";
+}
+.select input:nth-child(1){
+    grid-area: a;
+    border-radius: 10px;
+}
+.select input:nth-child(2){
+    grid-area: c;
+    border-radius: 10px;
+}
+.select input:nth-child(3){
+    grid-area: d;
+    border-radius: 10px;
+}
+.select textarea{
+    grid-area: b;
+    border-radius: 10px;
+}
+.button_yellow {
+    border: solid #ffc800;
+    background-color: #ffc800;
+    color: white;
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;  
+    margin: 20px auto;  
+}
+.button_yellow p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* hisseson */
+footer p{
+    color: #212529;
+}
+.footer_social_media :nth-of-type(1){
+    background-color: #203030;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: -7px 7px;
+}
+footer{
+    display: flex;
+    justify-content:space-between;
+    margin: 50px auto;
+    padding: 0 10px;
+}

@@ -7,74 +7,89 @@
 /* hisse1 */
 header {
     width: 100%;
-    height: 70px;
+    height: 100px;
     background-color: #2c3e50;
     color: white;
     display: flex;
     justify-content: center;
-    padding: 50px 0px;
+    position: fixed;
+    z-index: 8;
 
 }
 
 .header {
     width: 100%;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header_2 {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-
-.header ul {
+.header_2 ul {
     display: flex;
     width: 24%;
     justify-content: space-around;
 }
 
-.header li {
+.header_2 li {
     text-align: center;
     display: flex;
+    margin: 10%;
     align-items: center;
     font-weight: bold;
+    font-size: 17px;
 }
 
-.header a {
+.header_2 li :hover {
+    color: aqua;
+
+}
+
+.header_2 a {
     text-decoration: none;
     color: white;
 }
 
 .header h1 {
-    font-size: 45px;
+    font-size: 30px;
     align-items: center;
-
 }
 
 .header ul {
-    font-size: 27px;
+    font-size: 20px;
 }
 
 /* hisse2 */
 .back {
     width: 100%;
-    height: 1100px;
+    height: 800px;
     background-color: #1abc9c;
     text-align: center;
 }
 
 .img {
-    max-width: 355px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 150px;
+    padding-top: 180px;
 }
 
 .row {
-    width: 200px;
-    height: 8px;
+    width: 100px;
+    height: 5px;
     background-color: white;
     margin: 1%;
     border-radius: 2%;
 }
 
 .star {
-    font-size: 55px;
+    font-size: 33px;
     color: white;
 }
 
@@ -90,12 +105,12 @@ header {
 .back h1 {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: white;
-    font-size: 120px;
+    font-size: 70px;
 }
 
 .back h4 {
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     display: inline-block;
     font-weight: 400;
 }
@@ -105,20 +120,20 @@ header {
     text-align: center;
     padding-top: 60px;
     color: rgb(44, 62, 80);
-    font-size: 45px;
+    font-size: 25px;
     padding: 80px;
 }
 
 .row1 {
-    width: 200px;
-    height: 8px;
+    width: 100px;
+    height: 5px;
     background-color: rgb(44, 62, 80);
     margin: 1%;
     border-radius: 2%;
 }
 
 .star1 {
-    font-size: 55px;
+    font-size: 35px;
     color: rgb(44, 62, 80);
 }
 
@@ -128,7 +143,6 @@ header {
     justify-content: center;
     align-items: center;
     margin: 35px 0px;
-
 }
 
 .sekil {
@@ -138,23 +152,18 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .box img {
-    width: 100%;
-    height: 100%;
+    width: 371px;
+    height: 295px;
     border-radius: 20px;
 }
 
 .box {
-    width: 28%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     position: relative;
-    margin: 1%;
+    margin: 20px auto;
 }
 
 .owerlay {
@@ -164,11 +173,11 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 371px;
+    height: 295px;
     opacity: 0;
     transition: 0.9s;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .box:hover .owerlay {
@@ -180,8 +189,8 @@ header {
     font-size: 100px;
     position: absolute;
     justify-content: center;
-    top: 38%;
-    left: 45%;
+    top: 28%;
+    left: 39%;
     text-align: center;
 }
 
@@ -189,33 +198,32 @@ header {
 .back2 {
     margin-top: 50px;
     width: 100%;
-    height: 900px;
+    height: 600px;
     background-color: #1abc9c;
     text-align: center;
 }
 
 .back2 h1 {
     color: white;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     justify-content: center;
     align-items: center;
-    line-height: 100px;
-    padding-top: 150px;
-    
+    padding-top: 60px;
+
 }
 
 .row3 {
-    width: 200px;
-    height: 8px;
+    width: 100px;
+    height: 5px;
     background-color: white;
     margin: 1%;
-    border-radius: 2%;
+    border-radius: 1rem;
 }
 
 .star3 {
-    font-size: 55px;
+    font-size: 30px;
     color: white;
 }
 
@@ -224,37 +232,28 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 40px 0px;
 
 }
 
 .text {
     color: white;
     display: flex;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
-    margin: 15px auto;
-    font-size: 30px;
-    justify-content: space-around;
-}
-
-.text {
     width: 50%;
     height: 50px;
-    justify-content: center;
-    padding-right: 10 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    font-size: 20px;
     text-align: start;
-    position: relative;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
 }
 
 .button {
-    margin-top: 200px;
+    margin-top: 100px;
     border: solid 3px;
     color: white;
-    width: 350px;
-    height: 100px;
+    width: 232.5px;
+    height: 66px;
     display: flex;
     margin: 200px auto;
     border-radius: 10px;
@@ -262,7 +261,7 @@ header {
 }
 
 .button p {
-    font-size: 35px;
+    font-size: 1.25rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin: 20px 10px;
     text-align: center;
@@ -271,32 +270,35 @@ header {
 }
 
 .button i {
-    font-size: 35px;
-    margin: 30px auto;
+    font-size: 1.25rem;
+    margin: 25px auto;
     padding-left: 20px;
     text-align: center;
 }
+
 /* hisse5 */
-.contact{
+.contact {
     width: 100%;
     height: 800px;
 }
-.head h1{
+
+.head h1 {
     margin-top: 100px;
-        text-align: center;
-        color: rgb(44, 62, 80);
-        font-size: 70px;
+    text-align: center;
+    color: rgb(44, 62, 80);
+    font-size: 3rem;
 }
+
 .row4 {
-    width: 140px;
-    height: 5px;
+    width: 120px;
+    height: 4px;
     background-color: rgb(44, 62, 80);
     margin: 1%;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 .star4 {
-    font-size: 50px;
+    font-size: 30px;
     color: rgb(44, 62, 80);
 }
 
@@ -308,39 +310,57 @@ header {
     margin: 35px 0px;
 
 }
+
 .button:hover {
     background-color: bisque;
     color: black;
     border: none;
 }
-.esas5{
-    margin-bottom: 100px ;
+
+.esas5 {
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
-.button2{
-    background-color: #1abc9c;
-    width: 140px;   
+
+.item7 {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    margin: 15px auto;
+
+}
+.esas5 input,
+textarea {
     height: 100px;
+    width: 700px;
+    border: none;
+    border-bottom: 1.5px solid rgb(218, 206, 206);
+}
+
+.button2 {
+    background-color: #1abc9c;
+    width: 115px;
+    height: 70px;
     border-radius: 10px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 15px auto;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 320px;
 }
-.button2 p{
+
+.button2 p {
     color: white;
-    font-size:35px;
+    font-size: 1.25rem;
     padding: 22px;
-    
-    
 }
+
 /* hisse6 */
-.back3{
+.back3 {
     margin-top: 150px;
     background-color: #2c3e50;
-    height: 500px;
+    height: 300px;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -348,81 +368,29 @@ header {
     text-align: center;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.location h1{
-    font-size: 35px;
-    margin-left: 200px;
- 
+
+.location h1 {
+    font-size: 1.5rem;
 }
-.location p{
-    font-size: 30px;
-    margin-left: 200px;
+
+.location p {
+    font-size: 1.5rem;
 }
-.web i{
-    height: 213px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.web i {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: solid white 2px;
+    margin: 2px ;
+    
 }
-.web i{
-        height: 120px;
-        width: 120px;
-        margin: 20px;
-        line-height: 120px;
-        font-size: 50px;
-        border-radius: 50%
+.free h1 {
+    font-size: 1.5rem;
 }
-.web :nth-child(2){
-    font-size: 10px;
-    text-align: center;
-    border: solid white 3px;
-        height: 80px;
-        width: 80px;
-        margin: 20px;
-        line-height: 80px;
-        font-size: 39px;
-        border-radius: 50%
-}
-.web :nth-child(3){
-    font-size: 50px;
-    text-align: center;
-    border: solid white 3px;
-    height: 80px;
-        width: 80px;
-        margin: 20px;
-        line-height: 80px;
-        font-size: 39px;
-        border-radius: 50%
-}
-.web :nth-child(4){
-    font-size: 50px;
-    text-align: center;
-    border: solid white 3px;
-    height: 80px;
-        width: 80px;
-        margin: 20px;
-        line-height: 80px;
-        font-size: 39px;
-        border-radius: 50%
-}
-.web :nth-child(5){
-    font-size: 50px;
-    text-align: center;
-    border: solid white 3px;
-    height: 80px;
-        width: 80px;
-        margin: 20px;
-        line-height: 80px;
-        font-size: 39px;
-        border-radius: 50%
-}
-.free h1{
-    font-size: 35px;
-    margin-right: 100px;
- 
-}
-.free p{
+
+.free p {
     margin-top: 20px;
-    font-size: 30px;
-    margin-right: 100px;
- 
+    font-size: 1.5rem;
 }
