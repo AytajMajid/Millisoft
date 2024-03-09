@@ -1,0 +1,895 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* hisse1 */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #fe7ec9;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    margin: 40px 100px;
+}
+
+header i {
+    font-size: 25px;
+    margin: 50px 80px;
+}
+
+.navbar {
+    position: absolute;
+    background-color: rgb(17, 16, 16);
+    width: 230px;
+    height: 1006px;
+    opacity: 0;
+    color: white;
+    text-align: center;
+}
+
+header:hover .navbar {
+    display: block;
+    opacity: 0.9;
+}
+
+.navbar_1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.navbar i {
+    margin-left: 180px;
+    font-size: 35px;
+}
+
+/* hisse2 */
+.first_page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text h1 {
+    color: #11a2db;
+    font-family: "Oswald", sans-serif;
+    font-size: 65px;
+    width: 500px;
+    margin-top: 200px;
+}
+
+.text p {
+    color: rgb(80, 79, 79);
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img {
+    width: 50%;
+    height: 800px;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/1928ac4fdeea5ee28a624ce0/firstdayofschoolbacktoschoolphotoideasphotographyhowtotakegreatpictures13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    justify-content: flex-end;
+}
+
+/* hisse3 */
+.container {
+    width: 100%;
+    height: 350px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.layout {
+    width: 25%;
+    height: 350px;
+    background-color: #38c4c1;
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.layout_2 {
+    width: 25%;
+    height: 350px;
+    background-color: #feca02;
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.layout_3 {
+    width: 25%;
+    height: 350px;
+    background-color: #fe7ec9;
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.layout_4 {
+    width: 25%;
+    height: 350px;
+    background-color: #11a2db;
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.container i {
+    font-size: 80px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+/* hisse4 */
+.info {
+    width: 100%;
+    height: 600px;
+}
+
+.line {
+    width: 100%;
+    height: 500px;
+    background-color: #f8f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    color: #11a2db;
+    flex-direction: column;
+}
+
+.line1 {
+    height: 5px;
+    width: 70px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.line p {
+    text-align: center;
+    width: 60%;
+    font-family: "Nunito", sans-serif;
+    color: #42434b;
+    margin-top: 40px;
+    font-size: 1.25rem;
+
+}
+
+/* hisse5 */
+.about {
+    width: 100%;
+    height: 930px;
+    margin: auto;
+    text-align: center;
+}
+
+.image1 {
+    width: 560px;
+    height: 699px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.school p {
+    font-family: "Oswald", sans-serif;
+    color: #72737e;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.school h1 {
+    font-family: "Oswald", sans-serif;
+    color: #42434b;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.image2 {
+    width: 280px;
+    height: 340px;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d3bfc71acd69527589c31f1b/d.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid {
+    padding: 60px;
+    width: 90%;
+    height: 300px;
+    display: grid;
+    grid-gap: 10px 20px;
+    grid-template-areas: "a b c "
+                        "a d e";
+}
+
+.grid .image1 {
+    grid-area: a;
+}
+
+.grid .back_blue {
+    grid-area: b;
+}
+
+.grid .back_pink {
+    grid-area: c;
+}
+
+.grid .image2 {
+    grid-area: d;
+}
+
+.grid .image3 {
+    grid-area: e;
+}
+
+.image3 {
+    width: 280px;
+    height: 340px;
+    background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf90812ae3b351c4942c0350/dfv.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.back_blue {
+    width: 280px;
+    height: 350px;
+    background-color: #ebfcfc;
+    padding-top: 30px;
+}
+
+.circle {
+    background-color: #38c4c1;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
+.back_blue h3 {
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+    color: #646570;
+    font-weight: normal;
+    margin-left: 165px;
+    margin-top: 30px;
+}
+
+.back_blue p {
+    font-size: 0.9rem;
+    color: #54555e;
+    font-family: "Nunito", sans-serif;
+    margin: 25px 12px;
+    font-style: italic;
+    align-items: center;
+}
+
+.back_blue h2 {
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    color: #38c4c1;
+    margin-left: 150px;
+    margin-top: 45px;
+}
+
+.back_pink {
+    width: 280px;
+    height: 350px;
+    background-color: #fff0f9;
+    padding-top: 30px;
+}
+
+.circle_1 {
+    background-color: #fe7ec9;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 65px;
+}
+
+.back_pink h3 {
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+    color: #646570;
+    font-weight: normal;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+.back_pink p {
+    font-size: 0.9rem;
+    color: #54555e;
+    font-family: "Nunito", sans-serif;
+    margin: 25px 12px;
+    font-style: italic;
+    align-items: center;
+}
+
+.back_pink h2 {
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    color: #38c4c1;
+    margin-left: 150px;
+    margin-top: 45px;
+}
+
+/* hisse6 */
+.service {
+    width: 100%;
+    height: 700px;
+}
+
+.service {
+    background-color: #feca02;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+
+.key_word p {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding-top: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+.key_word h1 {
+    font-size: 2.2rem;
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.kart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cart {
+    background-color: white;
+    width: 292.5px;
+    height: 347px;
+}
+
+.back_cart {
+    background-color: #feca02;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.back_cart img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.back_cart2 {
+    background-color: #59c55e;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.back_cart2 img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.back_cart3 {
+    background-color: #6693f5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.back_cart3 img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.back_cart4 {
+    background-color: #28911a;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.back_cart4 img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    margin-top: 10px;
+}
+.zero{
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 169, 202);  
+    font-size: 16px;
+}
+.first{
+    font-family: "Oswald", sans-serif;
+    color: #6693f5;  
+    font-size: 16px;
+}
+.second{
+    font-family: "Oswald", sans-serif;
+    color: #58c5d8;  
+    font-size: 16px;
+}
+.third{
+    font-family: "Oswald", sans-serif;
+    color: #feca02;  
+    font-size: 16px;
+}
+.cart p{
+    font-size: 1.2rem;
+    font-family: "Oswald", sans-serif;
+    color: #595c5c;
+    font-style: italic;
+    font-weight: 200;
+    width: 180px;
+    margin-left: 55px;
+    padding-top: 30px;
+    text-align: center;
+    align-items: center;
+}
+/* hisse7 */
+.class{
+    background-color: #ebebec;
+    width: 100%;
+    height: 400px;
+}
+.class h1{
+    font-size: 60px;
+    color: #404444;
+    margin-left: 100px;
+    padding-top: 80px;
+    font-family: "Oswald", sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.text2{
+    font-size: 20px;
+    color: #595c5c;
+    width: 500px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: "Oswald", sans-serif; 
+}
+.text3{
+    font-size: 20px;
+    color: #595c5c;
+    width: 500px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 80px;
+    font-family: "Oswald", sans-serif; 
+}
+/* hisse8 */
+.method{
+    width: 100%;
+    height: 600px;
+    background-color: #38c4c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 90px;
+}
+.left{
+    width: 373px;
+    height: 477px;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/ca781a3c8fdc51668d3016a3/c4f5abfbf6e1318f547819911d40eb34.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.right{
+    width: 373px;
+    height: 477px;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/45abe08f6d4a5feb8226c2d3/bf76ae7aee2f9e595a6c9f6bdefc52a2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.middle{
+    width: 373px;
+    height: 477px;
+    background-color: white;
+}
+.middle h3{
+    font-size: 30px;
+    color: #4d4f57;
+    font-family: "Oswald", sans-serif;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.middle p{
+    font-family: "Nunito", sans-serif;
+    color: #404444;
+    line-height: 30px;
+    width: 320px;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+/* hisse9 */
+.pre_school{
+    width: 100%;
+    height: 800px;
+}
+.grid2 {
+    padding: 60px;
+    width: 90%;
+    height: 300px;
+    display: grid;
+    margin-left: 85px;
+    margin-top: 30px;
+    grid-gap: 10px 20px;
+    grid-template-areas: "a b c "
+                         "d b e  "
+                         "g b h  ";
+}
+
+.grid2 .funny_happy {
+    grid-area: a;
+}
+
+.grid2 .img2 {
+    grid-area: b;
+}
+
+.grid2 .teaching {
+    grid-area: c;
+}
+
+.grid2 .love {
+    grid-area: d;
+}
+
+.grid2 .equipmed {
+    grid-area: e;
+}
+
+.grid2 .education2 {
+    grid-area: g;
+    text-align: right;
+}
+
+.grid2 .transportation {
+    grid-area: h;
+}
+.pre_school h4 {
+    font-family: "Oswald", sans-serif;
+    color: #72737e;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.pre_school h2 {
+    font-family: "Oswald", sans-serif;
+    color: #42434b;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.img2 img{
+    width: 370px;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+.funny h3{
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-family: "Oswald", sans-serif;
+    color: #4b4b50;
+}
+.happy , .love, .education2 h3{
+    text-align: right;
+}
+.funny p{
+    font-weight:300;
+    line-height: 1.7;
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    color: #525357;
+    font-style: italic;
+    margin-top: 20px;
+}
+.love, .equipmed{
+    margin-top: 100px;
+}
+.education2, .transportation{
+    margin-top: 100px;
+}
+/* hisse10 */
+.blue{
+    width: 100%;
+    height: 900px;
+    background-color: #38c4c1;
+}
+.blue h3{
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 100px;
+}
+.blue h1{
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.comfort{
+    width: 570px;
+    height: 600px;
+    background-color: white;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-top: 80px;
+}
+.comfort h3 {
+    font-family: "Oswald", sans-serif;
+    color: #42434b;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 70px;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.comfort p {
+    font-family: "Nunito", sans-serif;
+    color: #42434b;
+    font-size: 1.125rem;
+    line-height: 33px;
+    text-align: center;
+    width: 450px;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+.comfort h4{
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    color: #fca6d5;
+    margin-top: 45px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+.facility{
+    display: flex;
+    justify-content: center;;
+    margin-top: 50px;
+}
+.facility img{
+    width: 570px;
+    height: 600px;
+    padding-left: 50px;
+    object-fit:cover;
+    object-position: center;
+}
+/* hisse11 */
+.connet{
+    width: 100%;
+    height: 500px;
+    
+
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+.back_pink2 {
+    width: 280px;
+    height: 350px;
+    padding-top: 30px;
+}
+
+.circle3 {
+    background-color: #fe7ec9;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
+.back_pink2 h3 {
+    font-family: "Oswald", sans-serif;
+    color: #646570;
+    margin-left: 135px;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 190px;
+    text-align: center;
+}
+.back_yellow {
+    width: 280px;
+    height: 350px;
+    padding-top: 30px;
+}
+
+.circle4 {
+    background-color: #feca02;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
+.back_yellow h3 {
+    font-family: "Oswald", sans-serif;
+    color: #646570;
+    margin-left: 135px;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 190px;
+    text-align: center;
+}
+.back_green {
+    width: 280px;
+    height: 350px;
+    padding-top: 30px;
+}
+
+.circle5 {
+    background-color:#38c4c1;  
+    ;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-left: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+}
+
+.back_green h3 {
+    font-family: "Oswald", sans-serif;
+    color: #646570;
+    margin-left: 135px;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 190px;
+    text-align: center;
+}
+/* hisseson */
+footer{
+    background-color: #fe7ec9;
+    width: 100%;
+    height: 300px;
+}
+.pinkbackground  {
+    display: flex;
+    justify-content:space-evenly;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 0.875rem;
+    padding-top: 80px;
+    padding-right: 200px;
+}
+.connection{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 71px 580px;
+    justify-content: space-around;
+}
+

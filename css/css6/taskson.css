@@ -1,0 +1,46 @@
+.qutu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+    animation: pulse 5s infinite;
+}
+ 
+
+.red{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation-name: test;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+.redone{
+animation-delay: 0.5s;
+}
+.redtwo{
+animation-delay: 1s;
+}
+.redthree{
+    animation-delay: 1.5s;
+}
+.redfour{
+    animation-delay: 2.s;
+}
+.redfive{
+    animation-delay: 2.5s;
+}
+@keyframes test {
+    from{
+        transform:scaleX(1);
+    }
+    to{
+        transform: scaleY(1.5);
+    }
+}
