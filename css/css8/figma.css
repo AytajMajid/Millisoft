@@ -1,0 +1,26 @@
+nav{
+background-color:#1F2E35;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav img{
+   
+    margin-left: 150px;
+}
+.menu ul{
+    width: 500px;
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+.login{
+    width: 89px;
+    height:39px;
+    border: solid ;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgba(0, 134, 214, 1);
+    border-radius: 8px;
+}
