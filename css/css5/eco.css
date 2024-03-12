@@ -4,22 +4,17 @@
 }
 
 .header {
-    background-color: white;
-    width: 100%;
-    height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
-
-.head {
-    display: flex;
-}
-
 .navbar img {
     width: 170px;
     height: auto;
+    object-fit: cover;
 }
-
 .navbar {
     width: 100%;
     height: 100px;
@@ -27,49 +22,40 @@
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    position: fixed;
     z-index: 8;
-    top: 0;
+    position: fixed;
 }
-
-.navbar ul {
-    display: flex;
-    width: 24%;
-    justify-content: space-around;
-}
-
-.navbar li {
-    text-align: center;
-    display: flex;
-    margin: 10%;
-    align-items: center;
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 20px;
     color: #596369;
-    font-size: 13px;
-    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
     font-weight: 600;
-    margin-top: 35px;
+    font-family: 'Rubik', sans-serif !important;
 }
-
-.navbar li :hover {
+.navbar ul li a {
+    text-decoration: none;
+    transition: 1s;
+}
+.navbar li:hover {
     color: #112433;
 }
-
 .navbar a {
     text-decoration: none;
     color: white;
 }
-
-.navbar ul {
-    font-size: 20px;
+.fa-hotdog {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
 }
-
-.icons :nth-child(2) {
+.icons2 :nth-child(2){
     background-color: #408858;
     width: 40px;
-    height: 40px;
+    height: 30px;
     border-radius: 50%;
+    margin-left: 20px;
 }
-
 .background {
     background-image: url("http://ecoharvest.farm/d1.jpg");
     width: 100%;
@@ -78,7 +64,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .slogan h2 {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -87,7 +72,6 @@
     font-size: 35px;
     line-height: 50px;
 }
-
 .slogan p {
     font-family: 'Rubik', sans-serif;
     width: 500px;
@@ -95,12 +79,10 @@
     line-height: 30px;
     text-align: center;
 }
-
 .slogan {
-    margin-top: 30px;
+  padding-top: 120px;
     margin-left: 120px;
 }
-
 .button {
     display: flex;
     margin-top: 40px;
@@ -108,7 +90,6 @@
     margin-right: 640px;
     margin-left: 300px;
 }
-
 .button :nth-child(1) {
     font-family: 'Rubik', sans-serif;
     background-color: #ae4c51;
@@ -120,7 +101,6 @@
     padding-top: 20px;
     text-align: center;
 }
-
 .button :nth-child(2) {
     font-family: 'Rubik', sans-serif;
     background-color: #408858;
@@ -132,7 +112,6 @@
     padding-top: 20px;
     text-align: center;
 }
-
 /* hisse2 */
 .welcome {
     background-image: url("http://ecoharvest.farm/img/bg/about.png");
@@ -250,17 +229,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .box img {
     width: 250px;
     height: 250px;
     border: solid rgb(231, 228, 228) 1px;
+    margin-bottom: 20px;
 }
 
 .box {
     position: relative;
     margin: 20px auto;
+    font-family: 'Rubik', sans-serif;
 }
 
 .owerlay {
@@ -297,20 +279,6 @@
 .owerlay i {
     padding-top: 10px;
 }
-
-.text2 {
-    color: #112433;
-    font-size: 25px;
-    /* font-weight: 400; */
-    font-family: 'Rubik', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    /* margin-left: 100px;
-    margin-right: 100px; */
-    margin-top: 20px;
-
-}
-
 /* hisse4 */
 .inform {
     display: flex;
@@ -360,7 +328,6 @@
     line-height: 30px;
     color: #7b8e9d;
     margin-left: 100px;
-
 }
 
 .circle1 {
@@ -412,28 +379,32 @@
     text-align: center;
     padding: 100px 500px;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 250px;
 }
-span {
+
+.span-line {
     color: #fff;
     font-size: 90px;
     line-height: 55px;
     font-weight: 300;
     font-family: 'Rubik', sans-serif;
 }
-.product p{
+
+.product p {
     font-size: 26px;
     font-family: 'Rubik', sans-serif;
     color: #fff;
     font-weight: 300;
     margin-top: 30px;
 }
-/* hisse6 */
-.nav{
+
+/* FOOTER */
+.title-col {
     background-image: url('http://ecoharvest.farm/img/bg/bg5.jpg');
     width: 1000px;
     background-position: center;
@@ -442,18 +413,168 @@ span {
     margin-top: 90px;
     box-shadow: 0px 30px 30px 0px rgba(89, 89, 89, 0.28);
 }
-.flex2{
+
+.vegetables2 {
     display: flex;
     justify-content: space-between;
 }
-.icon1, .icon2{
+
+.card-img1,
+.card-img2 {
     width: 200px;
-   padding-top: 60px;
-   padding-left: 60px;
-   padding-right: 50px;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 50px;
 }
-.icon1 img, .icon2 img{
+
+.card-img1 img,
+.card-img2 img {
     width: 90px;
     height: 90px;
 }
-/* hisseson */
+
+footer .container .row .main-footer {
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(http://ecoharvest.farm/img/bg/bg6.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .container .row .main-footer .footer {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 11%;
+    align-items: center;
+}
+
+footer .container .row .main-footer .logo {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container .row .main-footer .logo figure {
+    width: 100%;
+
+}
+
+footer .container .row .main-footer .logo figure img {
+    width: 100%;
+    object-fit: cover;
+}
+footer .container .row .main-footer .logo .social-icons {
+    display: flex;
+    width: 70%;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+footer .container .row .main-footer .logo .social-icons .border-icons {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    background: #2b7443;
+}
+
+footer .container .row .main-footer .logo .social-icons .border-icons:hover {
+    background-color: #f3c444;
+    color: #fff;
+}
+
+footer .container .row .main-footer .logo .social-icons .border-icons i {
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .container .row .main-footer .col {
+    margin-top: 70px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .container .row .main-footer .col h2 {
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: #112433;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: normal;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #fff;
+}
+
+footer .container .row .main-footer .col ul {
+    margin-top: 70px;
+    width: 100%;
+}
+
+footer .container .row .main-footer .col ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+footer .container .row .main-footer .col ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .container .row .main-footer .col:nth-child(4) ul li a {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+footer .container .row .main-footer .line-footer {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .container .row .main-footer .line-footer span {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f3c444
+}
+
+footer .container .row .main-footer .line-footer span .grey {
+    color: #7b8e9d;
+}
+
+footer .container .row .main-footer .line-footer::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #2b7443;
+    opacity: 0.8;
+    top: 0;
+}
