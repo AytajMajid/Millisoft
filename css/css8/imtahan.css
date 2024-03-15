@@ -1,0 +1,65 @@
+#cakes {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 25%;
+    position: relative;
+    
+}
+
+.owerlay {
+    background-color: #363636;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.9s;
+}
+.box:hover .owerlay {
+    opacity: 0.9;
+}
+.box:hover img {
+    transform: scale(1.2);
+}
+
+.text h3 {
+    color: #706f6f;
+    font-family: "Cambay", sans-serif;
+    font-size: 17px;
+    position: absolute;
+    justify-content: center;
+    top: 40%;
+    left: 25%;
+    text-align: center;
+}
+
+.text p {
+    font-family: "Quicksand";
+    font-size: 16px;
+    color: #c9a74d;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 31%;
+    text-align: center;
+}
