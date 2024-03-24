@@ -5,10 +5,12 @@
 .main{
     width: 100%;
     background-color: rgba(31, 46, 53, 1);   
+    display: flex;
 }
 .nav{
-    width:5%;
-    padding: 30px 130px;
+    width:20%;
+    padding-top: 30px;
+    padding-left: 120px;
 }
 .nav img {
     object-fit: cover;
@@ -17,32 +19,32 @@
     width: 45%;
     display: flex;
     justify-content: space-around;
-    margin: 0px 340px;
-    
-    
+    padding: 45px 0px;
 }
 .menu ul {
     width: 100%;
     display: flex;
-    /* padding-right: 80px; */
     justify-content: space-around;
     color: #ffffff;
-    justify-content: space-between;
     font-family: "Poppins", sans-serif;
+    margin-right: 20px;
 }
-.login {
-    width: 15%;
+.loginn {
+    width: 88px;
+    height: 39px;
+    background-color: rgba(0, 134, 214, 1);
     font-family: "Poppins", sans-serif;
     line-height: 39px;
-    background-color: rgba(0, 134, 214, 1);
     border-radius: 8px;
-    margin-left: 50px;
     text-align: center;
-}
-.login a {
-    color: white;
+    margin-top: 40px;
+    margin-left: 100px;
     
 }
+.loginn a{
+    color: white;
+}
+
 /* Header */
 .back {
     width: 100%;
@@ -103,9 +105,6 @@
     letter-spacing: 0.20000000298023224px;
     color: rgba(255, 255, 255, 1);
 }
-
-
-
 span {
     color: rgba(0, 134, 214, 1);
     margin-left: 10px;
@@ -135,12 +134,19 @@ span {
     .menu {
       display: flex;
     }
+    .login {
+        display: flex;
+    }
   }
   
   @media screen and (max-width: 768px) {
     .menu {
       display: none;
     }
+    .login{
+        display: none;
+    }
+
   
     .burger:hover i {
       background-color: red;
