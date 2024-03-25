@@ -48,42 +48,43 @@
 /* Header */
 .back {
     width: 100%;
-    height: 800px;
-}
-.background{
-    width: 100%;
-    height: 700px;
     background-color: rgba(31, 46, 53, 1);
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+	justify-content: space-between;
+    align-items: center;
+	/* padding: 30px 80px; */
 }
-.img{
-    width: 40%;
-    padding: 30px 0;
-    display: flex;
-    justify-content: flex-end;
+
+.main-img {
+	position: relative;
 }
-.img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.main-img img {
+	width: 70%;
+	height: 70%;
+	object-fit: cover;
+    padding-left: 100px;
+    margin-bottom: 50px;
+	position: relative;
+ 
+}
+
+.main-img-inner {
+	position: absolute;
 }
 .back h3 {
-    width: 550px;
+    width: 400px;
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 61px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
-    padding-top: 112px;
     padding-left: 154px;
 }
 
 .text {
-    width: 30%;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -165,9 +166,6 @@ span {
 
   }
 
-
-
-
 /* hisse2 */
 section{
     width: 100%;
@@ -176,6 +174,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 .total h3 {
     color: rgba(0, 134, 214, 1);
