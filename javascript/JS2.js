@@ -12,21 +12,13 @@
 
 
 // task2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// var a = ["d", 10, "l", 1, "p", "v", 2, "p", "1", "r", 7]
+// var a = ["a", 7, "g", 5, "r", "g", 5, "y", "k", "r", 7]
 
-// function tekrar(items) {
-// 	var result = [];
-// 	for (let i = 0; i < items.length; i++) {
-// 		const el = items[i];
-// 		if (!result.includes(el)) {
-// 			result.push(el);
-// 		}
-// 	}
+// var result = a.filter((c, index) => {
+// 	return a.indexOf(c) === index;
+// });
 
-// 	return result
-// }
-
-// console.log(tekrar(a));
+// console.log(result);
 
 // task3
 // var students= [2, "Leman", 1 ,6, 8 , 3]
@@ -151,8 +143,8 @@
 //   }
 //   console.log(siralanmisArray);
 // task13
-// let metn="Men bu il ADNA daxil oldum"
-// console.log(metn.replace("ADNA", "ADNSU"))
+// let metn="Men bu il ADNA daxil oldum.ADNA"
+// console.log(metn.replaceAll("ADNA", "ADNSU"))
 // task14!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // function ayliqEmekHaqqi(saatliqEmekHaqqi, hafteIsciSaati) {
 //     const haftalikIsciSaati = 40;
@@ -188,12 +180,20 @@
 //   console.log("35 saat üçün aylıq əmək haqqı:", aylikEmekHaqqi1);
 //   console.log("45 saat üçün aylıq əmək haqqı:", aylikEmekHaqqi2);  
 // task15
-// let sum = 0;
-// function cem(...numbers) {
-//     for (i = 0; i < numbers.length; i++) { sum += numbers[i]; }
-//     console.log(sum)
+// var eded = 245
+
+// function Sum(num) {
+// 	var split = num.toString().split("")
+// 	var result = 0
+
+// 	for (let i = 0; i < split.length; i++) {
+// 		var el = Number(split[i])
+// 		result = result + el
+// 	}
+// 	return result
 // }
-// cem(1, 4, 8, 9, 7);
+
+// console.log(Sum(eded));
 // task16!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // function ardiciSozlukEmsali(metn1, metn2, n) {
 //     // Mətnləri sözlərə böl
