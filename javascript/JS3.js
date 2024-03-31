@@ -93,6 +93,7 @@
 // }
 // console.log(Random(eded));
 // task9
+// Method1
 // var result=[]
 //     for (i=1 ; i<=100 ; i++){
 //         var ededler= i.toString().split("")
@@ -101,6 +102,12 @@
 //         }
 //     }
 // console.log(result)
+// Method2
+// for(i=1; i<100 ; i++){
+//    if(i%10==1) {
+//     console.log(i);
+// }
+// }
 // task10
 // var eded = prompt("Eded daxil edin")
 // var cevrilmis = eded.split("").reverse().join("")
@@ -130,6 +137,7 @@
 //     console.log(a1[i]*a2[i]);
 // }
 // task13
+// Method1
 // var metn = prompt("Metni daxil edin")
 // function Deleted(text) {
 //     var saitler = ["a", "ı", "o", "u", "e", "ə", "i", "ö", "ü"]
@@ -144,7 +152,10 @@
 //     console.log(splited.join(""));
 // }
 // Deleted(metn)
-// task14!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// method2
+// var soz="salam"
+// console.log(soz.replace(/[aioue]/gi,""));
+// task14
 // var a = Number(prompt("Eded daxil edin"))
 
 // function RandomString(num) {
@@ -158,8 +169,66 @@
 
 // 	return result;
 // }
-
 // console.log(RandomString(a));
 // task15
+// var ededler=[5, 8, 3, 4]
+// var cem=0
+// for(i=0; i<ededler.length; i++){
+//     cem+=ededler[i]
+// }
+// console.log(cem/ededler.length)
+// task16!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// var metn = prompt("Metni daxil edin")
+// function Deleted(text) {
+//     var saitler = ["a", "ı", "o", "u", "e", "ə", "i", "ö", "ü"]
+//     var splited = text.split("")
+//     for (i = 0; i < saitler.length; i++) {
+//         for (j = 0; j < splited.length; j++) {
+//             if (saitler[i] == splited[j]) {
+//                 splited.splice(j, 1)
+//             }
+//         }
+//     }
+//     console.log(splited.join(""));
+// }
+// task17
+// var cem=0
+// var eded=6
+// for (i=0; i<eded; i++){
+//     if(eded%i==0){
+//         cem+=i
+//     }
+// }
+// if(cem==eded){
+//     console.log("m");
+// }
+// else{
+//     console.log("m deyil");
+// task18
+// var eded=(Number(Promt("Eded daxil edin")))
+// var cem=0
+// var eded=input.toString().split("")
+// for(i=0; i<eded.length; i++){
+// cem+= +eded[i]                             
+// }
+// console.log(cem);
+// task19
+// var input = "Hello"
+// function cussubstring(str,start,end) {
+// var netice=""
+// for(i=start; i<end && i<str.length; i++){
+//     netice+=str[i]
+// }
+// console.log(netice);
+// }
+// task20
+// var input="salam"
+// var herf="m"
+// let harfler = input.split("")
+// for(i=0; i<harfler.length; i++){
+//     if(harfler[i]==herf){
+//         console.log(i);
+//     }
+// }
 
 
