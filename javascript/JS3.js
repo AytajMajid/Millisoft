@@ -177,20 +177,25 @@
 //     cem+=ededler[i]
 // }
 // console.log(cem/ededler.length)
-// task16!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// var metn = prompt("Metni daxil edin")
-// function Deleted(text) {
-//     var saitler = ["a", "ı", "o", "u", "e", "ə", "i", "ö", "ü"]
-//     var splited = text.split("")
-//     for (i = 0; i < saitler.length; i++) {
-//         for (j = 0; j < splited.length; j++) {
-//             if (saitler[i] == splited[j]) {
-//                 splited.splice(j, 1)
-//             }
-//         }
-//     }
-//     console.log(splited.join(""));
+// task16
+// let input = "Salam";
+// let vowel = 0;
+// let consonant = 0;
+// let letters = input.toLowerCase().split('');
+
+// for (let i = 0; i < letters.length; i++) {
+//   let letter = letters[i];
+
+//   if ('aeiou'.includes(letter)) {
+//     vowel++;
+//   } else if ('bcçdfgğhjklmnprsştvyz'.includes(letter)) {
+//     consonant++;
+//   }
 // }
+
+// console.log("Saitlərin sayı:", vowel);
+// console.log("Samitlərin sayı:", consonant);
+
 // task17
 // var cem=0
 // var eded=6
