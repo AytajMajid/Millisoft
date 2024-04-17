@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haqqimizda</title>
+<link rel="stylesheet" href="taskdom4.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="infoDiv">
+<h2>HAQQIMIZDA</h2>
+<ul id="haqqimizda" style="list-style-type: none;">
+  <li><i class="fa-solid fa-chevron-right"></i>
+    <span>Haqqimizda</span>
+  </li>
+  <p class="text">Millisoft IT şirkəti 2009-ci ildə kompüter texnologiyaları sahəsində ixtisaslaşmış, yüksək səviyyəli mütəxəssislər tərəfindən yerli və eyni zamanda da xarici şirkətlərin İnformasiya Texnologiyaları sahəsində olan bütün yeniliklərini tətbiq etməklə bizimlə əməkdaşlıq edəcək şirkətlərin tələblərini qarşılamaq məqsədi ilə yaradılmışdır. Fəaliyyət göstərdiyimiz illər ərzində şirkətimiz müxtəlif müəssisə və təşkilatların əməkdaşları, eləcə də sıravi vətəndaşlar üçün sürətli, keyfiyyətli və sərfəli xidmət göstərərək müştərilərimizin rəğbətini qazanmışdır. MilliSoft şirkəti eyni zamanda 2018-ci ildən bəri tədris mərkəzi olaraq da xidmət göstərir.</p>
+  <li><i class="fa-solid fa-chevron-right"></i>
+    <span>Məqsədimiz</span>
+  </li>
+  <p class="text">Bizim başlıca məqsədimiz əməkdaşlıq etdiyimiz şirkətlərlə bir vəhdət yaratmaq və komanda şəklində müştərilərimizin biznes proseslərin stabilliyini, təhlükəsizliyini təmin edən və effektivliyini artıran faydalı IT xidmətlər göstərməkdir.</p>
+  <li ><i class="fa-solid fa-chevron-right"></i>
+    <span>Hədəflərimiz</span>
+  </li>
+  <p class="text">Əsas hədəflərimiz gündən günə inkişaf edən texnologiyanı müntəzəm şəkildə izləmək və tətbiq etmək, öz işimizlə müştərilərimizi sevindirmək və onların istəklərini yerinə yetirmək, daima inkişaf etmək və böyüməkdir.</p>
+</ul>
+</div>
+
+<script>
+document.querySelectorAll("#infoDiv li").forEach(item =>{
+  item.addEventListener("click" , function(){
+    document.querySelectorAll("#infoDiv li" ).forEach(x =>{
+      if(this !== x){
+        x.children[0].classList.remove("rotate")    
+      x.children[1].classList.remove("color")
+    x.nextElementSibling.classList.remove("height") 
+  }
+    })
+    item.children[0].classList.toggle("rotate")    
+      item.children[1].classList.toggle("color")
+    item.nextElementSibling.classList.toggle("height")
+  })
+})
+</script>
+
+</body>
+</html>

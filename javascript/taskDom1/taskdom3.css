@@ -1,0 +1,207 @@
+.text_a {
+    width: 100%;
+    height: 96px;
+    background-color: white;
+  
+}
+
+.heads h1 {
+    font-size: 45px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #212528;
+    padding-top: 50px;
+}
+
+.heads p {
+    color: #7f8585;
+    font-style: italic;
+}
+
+.heads {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.back2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.one , .twoo , .threee , .fourr , .fivee , .sixx {
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+.white {
+    background-color: white;
+    width: 360px;
+    height: 350px;
+}
+.image{
+    width: 80%;
+    height: 80vh;
+}
+
+.imgg {
+    background-color: rgb(248 249 250);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hoverdivs {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.hoverdivs .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hoverdivs img {
+    width: 100%;
+    height: 100%;
+}
+
+.backk h1 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1%;
+    color: #2d3236;
+}
+
+.backk p {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.display {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.white:hover .plus {
+    opacity: 0.9;
+}
+.plus{
+    background: rgba(255, 200, 0, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.9s;
+}
+.plus i {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    justify-content: center;
+    top: 25%;
+    left: 40%;
+    text-align: center;
+}
+
+/* ACILAN SEHIFE */
+.jsDiv{
+    width: 650px;
+    height: 600px;
+    background-color: white;
+    top: 5%;
+    left: 5%;
+    margin-left: 250px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.oper h1, .italic {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    
+}
+
+.oper h1 {
+    font-size: 38px;
+    color: #303335;
+}
+
+.itaclic {
+    font-size: 12px;
+    color: #666b6e;
+}
+
+.oper .lorem {
+    color: #6c757d;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.imgs1 {
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.imgs1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* padding-left: 500px; */
+    
+}
+
+.menu p {
+    width: 55%;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.footer1 p {
+    font-family: "Poppins", sans-serif;
+    margin-left: 90px; 
+    font-size: 15px;
+    width: 450px;
+    color: #2a2e31;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    margin-left: 180px; 
+    line-height: 50px;
+    border-radius: 10px;
+    background-color: #ffc800;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.button i {
+    color: white;
+    padding-right: 10px;
+    text-align: center;
+}

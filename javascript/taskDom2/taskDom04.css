@@ -1,0 +1,52 @@
+#headDiv{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.imgs1{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: solid rgb(241, 239, 239) 1px;
+    margin: 20px 0;
+}
+img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+h1, p{
+    text-align: center;
+}
+.imgs1 :nth-child(2){
+font-weight: bold;
+}
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 300px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* JSucun */
+#JsDiv{
+    display: none;
+}
+.active{
+    background-color: blue;
+    z-index: 999;
+    /* border-radius: 10px; */
+}

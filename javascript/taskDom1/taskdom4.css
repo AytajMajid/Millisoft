@@ -1,0 +1,27 @@
+#infoDiv{
+    font-family: "Open Sans", sans-serif;
+}
+i{
+    margin-right: 20px; 
+    cursor: pointer;
+}
+.text{
+    margin-bottom: 20px;
+    height: 0px;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.4sn;
+    color: gray;
+}
+/* jsClass */
+.rotate{
+    transform: rotate(90deg);
+    color: blueviolet;
+  
+}
+.color{
+    color: blueviolet;
+}
+.height{
+    height: 100px;
+}

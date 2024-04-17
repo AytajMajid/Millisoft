@@ -1,0 +1,100 @@
+.main{
+    background-color: rgb(107, 107, 236);
+    width:800px;
+    height: 200px;
+    margin: 80px auto;
+}
+#quotesDiv{
+    text-align: center;
+    padding: 100px 0;
+}
+.main p{
+    font-style: italic;
+    color: white;
+}
+.main h2{
+color: white;
+}
+button{
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    margin: 15px auto;
+    font-size: 16px;
+}
+/* task2 */
+/* .main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(54, 54, 240);
+    margin: 0;
+    padding: 70px 0;
+}
+#checkList{
+    width: 450px;
+    height: 400px;
+    background-color: rgb(250, 238, 238);
+    margin:auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+#newList{
+    padding-bottom: 50px;
+}
+input{
+    width: 330px;
+    height: 40px;
+    border: solid blue 2px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+button{
+    width: 80px;
+    height: 45px ;
+    background-color: rgb(60, 60, 245);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+li{
+    width: 410px;
+    height: 30px;
+    background-color:rgb(187 221 245);
+    transition:ease-in;
+    border-radius: 5px;
+    margin: 3px -39px;
+    font-family: "Poppins", sans-serif;
+    padding: 13px 20px;
+   
+}
+.checkk{
+    width: 38px;
+    height: 30px;
+    background-color: rgb(24, 231, 17);
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+    float: right;
+}
+.tras{
+    width: 38px;
+    height: 30px;
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+    float: right;
+    margin-left: 10px;
+}
+.complated{
+    text-decoration: line-through;
+} */

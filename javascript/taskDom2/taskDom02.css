@@ -1,0 +1,49 @@
+#conts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+.search{
+    width: 800px;
+    text-align: center;
+    padding-left: 250px;
+    padding-top: 20px;
+}
+input{
+    width: 500px;
+    height: 30px;
+}
+button{
+    width: 60px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+span{
+    font-size: 20px;
+    text-decoration: underline;
+    padding-left: 80px;
+}
+li{
+    cursor: pointer;
+    padding: 5px 0px;
+
+}
+.container{
+    width: 300px;
+    height: 450px;
+    border: solid black;
+    text-align: left;
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: space-around;
+    margin: 100px 0px;
+    cursor: pointer;
+}
+.selected{
+    background-color: blue;
+}

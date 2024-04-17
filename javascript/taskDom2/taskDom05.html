@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .slider {
+            width: 500px;
+            height: 400px;
+            background-color: rgb(10, 122, 122);
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            width: 70%;
+            height: 20px;
+            margin-top: 150px;
+            margin-left: 50px;
+
+        }
+
+        p {
+            color: white;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+
+        .slide ::after {
+            content: '100';
+            color: white;
+            font-size: 2rem;
+            position: absolute;
+            left: 80%;
+            top: 25%;
+        }
+
+        .slide ::before {
+            content: '0';
+            color: white;
+            font-size: 2rem;
+            position: absolute;
+            left: 12%;
+            top: 25%;
+        }
+    </style>
+    <div class="slider">
+        <input type="range" min="1" max="100" value="1" id="myRange" class="slide">
+        <p>Ses seviyyesi : <span id="value"></span></p>
+    </div>
+
+    <script>
+        let a = document.getElementById('myRange')
+        let b = document.getElementById('value')
+        b.innerHTML = a.value
+        a.oninput = function () {
+            b.innerHTML = this.value
+        }
+    </script>
+</body>
+
+</html>
