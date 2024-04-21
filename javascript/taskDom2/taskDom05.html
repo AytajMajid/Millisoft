@@ -5,62 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <style>
-        .slider {
-            width: 500px;
-            height: 400px;
-            background-color: rgb(10, 122, 122);
-            margin: 0;
-            padding: 0;
-        }
+       .content {
+	text-align: center;
+}
 
-        input {
-            width: 70%;
-            height: 20px;
-            margin-top: 150px;
-            margin-left: 50px;
+.cntrl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
 
-        }
+.item {
+	height: 40px;
+    
+}
 
-        p {
-            color: white;
-            margin-left: 50px;
-            font-weight: bold;
-        }
+.item button {
+	border: none;
+	background: white;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
 
-        .slide ::after {
-            content: '100';
-            color: white;
-            font-size: 2rem;
-            position: absolute;
-            left: 80%;
-            top: 25%;
-        }
+.item h3 {
+	margin: 8px 0;
+}
 
-        .slide ::before {
-            content: '0';
-            color: white;
-            font-size: 2rem;
-            position: absolute;
-            left: 12%;
-            top: 25%;
-        }
+.cntrl {
+	height: 100%;
+}
+
+.progBar {
+	width: 500px;
+	border: 1px solid black;
+    border-radius: 20px;
+	height: 100%;
+	margin: 0 8px;
+	cursor: pointer;
+    overflow: hidden;
+}
+
+.progress {
+	background-color: rgb(172, 44, 114);
+	height: 100%;
+	width: 50%;
+	transition: width 250ms ease;
+}
     </style>
-    <div class="slider">
-        <input type="range" min="1" max="100" value="1" id="myRange" class="slide">
-        <p>Ses seviyyesi : <span id="value"></span></p>
+    <div class="container">
+        <div class="content">
+            <div class="item">
+                <div class="cntrl">
+                    <button id="minus">-</button>
+                        <div class="progBar">
+                            <div class="progress"></div>
+                        </div>
+                    <button id="plus">+</button>
+                </div>
+                <h3 class="persentage">50%</h3>
+            </div>
+        </div>
     </div>
+</div>
 
     <script>
-        let a = document.getElementById('myRange')
-        let b = document.getElementById('value')
-        b.innerHTML = a.value
-        a.oninput = function () {
-            b.innerHTML = this.value
-        }
+      const soundActions = document.querySelectorAll(".cntrl button");
+const progres = document.querySelector(".progress");
+const bar = document.querySelector(".progBar");
+const persent = document.querySelector(".persentage");
+const progress = 500;
+const changer = 2;
+let soundper = 50;
+
+function controlSound(soundper) {
+	progres.style.width = soundper + "%";
+	persent.innerText = soundper + "%";
+}
+
+soundActions.forEach((btn) => {
+	btn.addEventListener("click", function () {
+		if (
+			this.id === "plus" &&
+			soundper <= 100 - changer
+		) {
+			soundper += changer;
+		}
+		if (
+			this.id === "minus" &&
+			soundper >= 0 + changer
+		) {
+			soundper -= changer;
+		}
+		controlSound(soundper);
+	});
+});
+
+bar.addEventListener("click", function (e) {
+	const percentage = Math.floor(
+		(100 * Math.floor(e.clientX - this.getBoundingClientRect().left)) /
+			progress
+	);
+	soundper = percentage;
+	controlSound(soundper);
+});
     </script>
 </body>
 

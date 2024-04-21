@@ -1,0 +1,75 @@
+#head{
+    position: absolute;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn{
+    width: 100px;
+    height:35px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#btn:hover{
+    background-color: green;
+}
+#main{
+    width: 70.5%;
+    height:35px ;
+    margin-left: 190px;
+    margin-top: 80px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left:190px;
+    margin-top: 80px;
+}
+#modal{
+    display: none;
+    width: 80%;
+    position: relative;
+    height: 350px;
+    z-index: 999;
+    margin: 100px 0px;
+    left: 18%;
+    /* overflow: hidden; */
+}
+#modalMain{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 56, 56, 0.5);
+    align-items: center;
+    padding-top: 50px;
+ 
+}
+.inp1,.inp2,.inp3 {
+    width: 300px;
+    line-height: 25px;
+    
+}
+#but{
+    width:100px;
+    height: 40px;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#xmark{
+    background-color: rgb(22, 21, 21);
+    width: 35px;
+    height: 25px;
+    margin-left: 760px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}

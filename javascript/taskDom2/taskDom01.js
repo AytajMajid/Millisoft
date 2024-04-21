@@ -28,9 +28,14 @@ function writersDiv() {
     document.getElementById("writer").innerHTML =
         `<p>"${random.quote}"</p>
  <h2>${random.person}</h2>`
-
- quotes.splice(quotes.indexOf(random),1)
 }
+function changeQuote() {
+	let random = getRandomNumber(quotes);
+	let activeQuote = quotes[random];
+	quote.innerText = activeQuote.text;
+	person.innerText = activeQuote.author;
+}
+quoteChange.onclick = changeQuote;
 // task2
 // function test() {
 //     document.getElementById("listText").innerHTML += `<li>${inputAdd.value}</i> <i class="fa-solid fa-trash tras"></i><i class="fa-solid fa-square-check checkk" ></li>`

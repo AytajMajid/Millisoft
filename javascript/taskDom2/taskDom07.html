@@ -8,67 +8,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-    <div id="numbers">
-
-    </div>
-    <div class="pagination">
-        <a><i class="fa-solid fa-chevron-left"></i></a>
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">5</a>
-        <a><i class="fa-solid fa-chevron-right"></i></a>
-    </div>
-
-
     <style>
+        .container {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .items li {
+            margin-bottom: 8px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
         .pagination {
-            width: 300px;
-            padding-left: 300px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+   
+            
         }
 
-        .pagination a {
-            color: black;
-            font-size: 10px;
-            float: left;
-            transition: background-color .3s;
-            padding: 8px 18px;
-            text-decoration: none;
-
+        .pagination button {
+            margin: 0;
+            margin-top: 180px;
+            background: none;
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 20px;
+            width: min-content;
         }
 
-        .pagination a :active {
-            background-color: rgb(14, 182, 14);
+        .pagination button:hover,
+        .pagination button:focus {
+            background: #2260cb;
             color: white;
         }
 
-        .pagination a:hover:not(.active) {
-            background-color: pink;
+        .pagination .active {
+            background: #2260cb;
+            color: white;
         }
     </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <ul class="items" style="list-style: none;"></ul>
+            <div class="pagination">
+                <button id="previous" class="control"><</button>
+                <div class="pagPages"></div>
+                <button id="nextPage" class="control">></button>
+            </div>
+        </div>
+    </div>
 
     <script>
-        function reqemleriListeYaz() {
-            var reqemler = [];
-            for (var i = 1; i <= 50; i++) {
-                reqemler.push(i);
+        const pagDiv = document.querySelector(".pagPages");
+        const itemsDiv = document.querySelector(".items");
+        const btns = document.querySelectorAll(".control");
+        const pageItems = [];
+        let number = 10;
+        let active = 1;
+
+        function createItems(amount) {
+            for (let i = 1; i <= amount; i++) {
+                pageItems.push("Item " + i);
             }
-            var listeElementi = document.createElement("ul");
-            reqemler.forEach(function (reqem) {
-                var liElementi = document.createElement("li")
-                liElementi.textContent = "Item " + reqem;
-                listeElementi.appendChild(liElementi);
-            });
-            var divElementi = document.getElementById("numbers");
-            divElementi.appendChild(listeElementi);
         }
-        reqemleriListeYaz();
 
+        function fetchData(page) {
+            itemsDiv.innerHTML = "";
+            const start = page * number - number;
+            const end = page * number;
+            for (let i = start; i < end; i++) {
+                const newItem = document.createElement("li");
+                newItem.innerText = pageItems[i];
+                itemsDiv.appendChild(newItem);
+            }
+        }
 
+        function createPages() {
+            pagDiv.innerHTML = "";
+            for (let i = 1; i <= pageItems.length / number; i++) {
+                const pagBtn = document.createElement("button");
+                pagBtn.innerText = i;
+                i === 1 && pagBtn.classList.add("active");
+                pagDiv.appendChild(pagBtn);
+                pagBtn.addEventListener("click", function () {
+                    active = +this.innerText;
+                    removeActiveClasses(
+                        document.querySelectorAll(".pagPages button")
+                    );
+                    this.classList.add("active");
+                    disableBtns();
+                    fetchData(active);
+                });
+            }
+        }
+
+        function disableBtns() {
+            let previousBtn = btns[0];
+            let nextBtn = btns[1];
+            previousBtn.disabled = false;
+            nextBtn.disabled = false;
+            if (active === 1) {
+                previousBtn.disabled = true;
+            }
+            if (active === pageItems.length / number) {
+                nextBtn.disabled = true;
+            }
+        }
+
+        function removeActiveClasses(elements) {
+            elements.forEach(element => {
+                element.classList.remove("active");
+            });
+        }
+
+        btns.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                let pages = document.querySelectorAll(".pagPages button");
+                removeActiveClasses(pages);
+                if (this.id === "previous" && active > 1) {
+                    active--;
+                }
+                if (this.id === "nextPage" && active < pageItems.length / number) {
+                    active++;
+                }
+                pages[active - 1].classList.add("active");
+                disableBtns();
+                fetchData(active);
+            });
+        });
+
+        createItems(50);
+        createPages();
+        disableBtns();
+        fetchData(active);
     </script>
 </body>
 

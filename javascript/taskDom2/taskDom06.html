@@ -16,43 +16,63 @@
         <div class="slide">
             <img src="images/a.jpg" alt="" class="slideImage">
         </div>
-        <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
-        <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+        <div id="controls">
+            <button id="previous"><</button>
+            <button id="next">></button>
+        </div>
+        <div class="active"></div>
     </div>
 
     <script>
         var slides = document.querySelector('.slideImage');
-        var images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg'];
-        var i = 0;
-        var intervalID;
+        const activeDiv = document.querySelector(".active");
+        const btn = document.querySelectorAll("#controls button");
+        let index = 0;
+        var images = [
+            'images/d.jpg',
+            'images/a.jpg',
+            'images/b.jpg',
+            'images/f.jpg',
+            'images/e.jpg',
+            'images/c.jpg'
+        ];
 
-        function plusSlides(n) {
-            clearInterval(intervalID); // Otomatik geçişi sıfırla
-            i += n;
-            if (i < 0) {
-                i = images.length - 1;
-            } else if (i >= images.length) {
-                i = 0;
-            }
-            setImg();
-            startSlideshow();
+        function renderImages() {
+            images.forEach((img) => {
+                const newImg = document.createElement("div");
+                newImg.classList.add("item");
+                const create = document.createElement("img");
+                create.src = img;
+                newImg.appendChild(create);
+                activeDiv.appendChild(newImg);
+                newImg.addEventListener("click", function () {
+                    const targetImageDiv = this.children[0];
+                    slides.src = targetImageDiv.src;
+                });
+            });
         }
 
-        function setImg() {
-            slides.src = 'images/' + images[i];
-        }
-
-        function startSlideshow() {
-            intervalID = setInterval(function () {
-                i++;
-                if (i >= images.length) {
-                    i = 0;
+        btn.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                if (this.id === "next") {
+                    if (index === images.length - 1) {
+                        index = 0;
+                    } else {
+                        index++;
+                    }
                 }
-                setImg();
-            }, 3000);
-        }
+                if (this.id === "previous") {
+                    if (index === 0) {
+                        index = images.length - 1;
+                    } else {
+                        index--;
+                    }
+                }
+                slides.src = images[index];
+            });
+        });
 
-        startSlideshow();
+        renderImages();
 
     </script>
 
