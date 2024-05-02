@@ -1,0 +1,23 @@
+@media (max-width:992px) {
+    .image{
+        width: 50%;
+    }
+    ul li:not(:last-child){
+        display: none;
+    }
+    li:last-child{
+        display: block;
+    }
+}
+@media (max-width:576px){
+    .image{
+    width: 100%;
+    }
+    ul li:not(:last-child){
+        display: none;
+    }
+    li:last-child{
+        display: block;
+    }
+}
+

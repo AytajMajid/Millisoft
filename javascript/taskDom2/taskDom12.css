@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.background {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://static.zara.net/assets/public/773a/e4c6/05cf4c42b164/cce7e7123236/image-landscape-default-fill-905cb638-66e0-4c66-8fcb-3c7553b2cae4-default_0.jpg?ts=1713192042157&w=1360");
+}
+
+.head {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    position: fixed;
+    height: 80px;
+    padding: 0 90px;
+}
+
+.head .image-icon {
+    width: 50%;
+}
+
+.head img {
+    width: 140px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.head ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    margin-right: 50px;
+}
+
+.head li {
+    margin: 20px;
+    padding-top: 10px;
+}
+
+.navbar {
+    width: 30%;
+    height: 100%;
+}

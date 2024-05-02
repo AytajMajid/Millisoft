@@ -54,8 +54,6 @@ document.getElementById("tableBody").addEventListener("click", function(e) {
     } else if (e.target.matches(".edit-icon")) {
     }
 });
-
-
 document.getElementById("tableBody").addEventListener("click", function(e) {
     if (e.target.matches(".edit-icon")) {
         var selectedRow = e.target.closest("tr");

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PRODUCTS.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="background">
+        <div class="head">
+            <div class="image-icon">
+                <a href="/javascript/taskDom2/taskDom12.html"><img
+                        src="https://download.logo.wine/logo/Zara_(retailer)/Zara_(retailer)-Logo.wine.png" alt=""></a>
+            </div>
+            <div class="navbar">
+                <ul style="list-style-type: none;">
+                    <li>Collections</li>
+                    <li class="products"><a href="/javascript/taskDom2/PRODUCTS.HTML"
+                            style="text-decoration: none; color: black;">Products</a></li>
+                    <li>About</li>
+                    <li style="display: flex;">Basket <button style="border: none; background-color: white;"
+                            id="bascet"> (0) </button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- JS MODAL1 -->
+    <div id="container">
+
+    </div>
+    <!-- JS MODAL2 -->
+
+    <div id="head">
+        <i class="fa-solid fa-x cancel"></i>
+        <h1>Shopping Cart</h1>
+        <div class="images">
+        </div>
+        <div class="total">
+            <strong> Total:</strong>
+        </div>
+    </div>
+    <script>
+        basket = []
+        let myArray = [
+            { id: 1, name: "Dress", price: 30, image: "https://static.zara.net/assets/public/3f71/ad66/4ac846bd9e6f/43458e0c54d1/08372103526-e2/08372103526-e2.jpg?ts=1713511297532&w=850" },
+            { id: 2, name: "Top", price: 15, image: "https://static.zara.net/assets/public/3c57/e83f/26ea4da1bfb2/a56b5c88fb7b/03519054700-e1/03519054700-e1.jpg?ts=1713438386341&w=850" },
+            { id: 3, name: "Trousers", price: 26, image: "https://static.zara.net/assets/public/fa5b/562b/5b0746c3ab01/28d6fcd34909/06045022400-e1/06045022400-e1.jpg?ts=1704711638884&w=850" }
+        ];
+
+        myArray.forEach((elem) => {
+            document.querySelector('#container').innerHTML += `
+            <div class="imgs">
+                    <img src=" ${elem.image}" alt="">
+                    <div class="text">
+                        <div class="text1">
+                            <p>${elem.name}</p>
+                            <span><button class="btn" >Add</button></span>
+                        </div>
+                        <p>${elem.price}$</p>
+                </div>
+            `
+        })
+        document.querySelectorAll('.btn').forEach((elem, index) => {
+            elem.addEventListener('click', function () {
+                if (basket.length == 0) {
+                    basket.push(myArray[index])
+                    basket[basket.length - 1].count = 1
+                }
+                else {
+                    for (i = 0; i < basket.length; i++) {
+                        if (basket[i].id == myArray[index].id) {
+                            find = true;
+                            mainIndex = i
+                            break;
+                        }
+                        else {
+                            find = false
+
+                        }
+                    }
+                    if (find) {
+                        basket[mainIndex].count++
+
+                    }
+                    else {
+                        basket.push(myArray[index])
+                        basket[basket.length - 1].count = 1
+                    }
+                }
+                getbasket()
+            })
+
+            elem.addEventListener('click', function () {
+                document.querySelector('#head').style.display = 'block'
+            })
+        })
+        let cancel = document.querySelector('.cancel')
+        cancel.addEventListener('click', function () {
+            document.querySelector('#head').style.display = 'none'
+        })
+
+        function getbasket() {
+            count = 0
+            document.querySelector('.images').innerHTML = ""
+            basket.forEach(elem => {
+                document.querySelector('.images').innerHTML += `
+            <div id="img">
+                <img src="${elem.image}" alt="">
+                <div class="count">
+                    <p class="name">${elem.name}</p>
+                    <p class="port"><i class="fa-solid fa-minus minus"></i>Count:${elem.count}<i class="fa-solid fa-plus plus"></i></p>
+                    <strong>${elem.price}$</strong>
+                </div>
+                <div class="closeBtn">
+                    <i class="fa-solid fa-x re delete"></i>
+                </div>
+            </div>
+            `
+                count += elem.count;
+            })
+            bascet.innerHTML = count
+            total += elem.count * elem.price
+            // document.querySelector('.total strong').innerHTML = count
+
+
+            document.querySelectorAll(".plus").forEach((elem, index) => {
+                elem.addEventListener("click", function () {
+                    basket[index].count++
+                    getbasket()
+                    console.log(elem);
+                })
+            })
+            document.querySelectorAll(".minus").forEach((elem, index) => {
+                elem.addEventListener("click", function () {
+                    basket[index].count--
+                    if (basket[index].count == 0) {
+                        basket.splice(index, 1)
+                    }
+                    getbasket()
+                    console.log(elem);
+                })
+            })
+            document.querySelectorAll(".delete").forEach((elem, index) => {
+                elem.addEventListener("click", function () {
+                    basket.splice(index, 1)
+                    getbasket()
+                    console.log(elem);
+                })
+            })
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

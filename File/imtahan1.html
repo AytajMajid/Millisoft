@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function edediOrta(arr) {
+        var umumi = 0;
+        for(var i = 0; i < arr.length; i++) {
+            umumi += arr[i];
+        }
+        var ortalama = umumi / arr.length;
+        return ortalama;
+    }
+
+    var ededler = [1, 2, 3, 4, 5];
+        var result = edediOrta(ededler);
+    
+    console.log("Ededi orta: " + result);
+
+    
+    </script>
+</body>
+</html>

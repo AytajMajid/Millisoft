@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- CSS TASK2-->
+    <style>
+        .head {
+            margin: 100px 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #inp {
+            width: 250px;
+            height: 35px;
+            margin: 0 30px;
+        }
+
+        #btn {
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+        }
+        .complated{
+            text-decoration: line-through;
+        }
+
+    </style>
+    <!-- HTML TASK2 -->
+   <div class="head">
+    <div id="checkList">
+        <div id="newList">
+        <input type="text" id="inp" >
+        <button id="btn" onclick="test()">Add</button>
+    </div>
+    <div id="list">
+        <ul style="list-style-type: none;" id="listText">
+        </ul>
+    </div>
+    </div> 
+</div>
+<!-- JS TASK2 -->
+<script>
+   function test() {
+    document.getElementById("listText").innerHTML += `<li>${inp.value} <span>Sil</span> <span>Hazir</span> </li>`
+    document.querySelectorAll("#listText li").forEach(element => {
+        element.children[0].addEventListener("click", function () {
+            element.remove()
+        })  
+        element.children[1].addEventListener("click", function () {
+            element.classList.add("complated")
+        }) 
+    });
+    inp.value=""
+}
+ 
+    
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
